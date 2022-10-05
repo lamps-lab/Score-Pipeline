@@ -1,0 +1,1497 @@
+Journal of Environmental Economics and Management 72 (2015) 123–136
+
+Contents lists available at ScienceDirect
+
+Journal of
+Environmental Economics and Management
+journal homepage: www.elsevier.com/locate/jeem
+
+Three reasons to use annual payments in contingent valuation
+surveys: Convergent validity, discount rates,
+and mental accounting$
+Kevin J. Egan n, Jay R. Corrigan, Daryl F. Dwyer
+4140-E University Hall, Department of Economics, University of Toledo, Toledo, OH 43606, USA
+
+a r t i c l e i n f o
+
+abstract
+
+Article history:
+Received 4 September 2013
+Available online 28 May 2015
+
+We present three arguments for using ongoing annual payments in contingent valuation
+(CV) surveys that estimate the benefit of a long-lasting environmental improvement. First,
+by matching the duration of the payments with the duration of the environmental
+benefits, survey respondents are spared from performing complicated present value
+calculations. Second, willingness to pay (WTP) estimates from CV surveys that include
+ongoing annual payments best match WTP estimates obtained using travel cost surveys.
+Third, respondents are less likely to face binding mental budget constraints with ongoing
+annual payments than with a larger one-time payment. In addition, respondents’ discount
+rates may be estimated by collecting non-hypothetical, individual time preference data as
+part of the valuation survey.
+& 2015 Elsevier Inc. All rights reserved.
+
+Keywords:
+Discounting
+Contingent valuation
+Convergent validity
+Willingness to pay
+Time frame
+Time horizon
+Wetlands
+
+Introduction
+Contingent valuation (CV) surveys typically describe a proposed environmental improvement and then present survey
+respondents with a hypothetical referendum asking at what cost they would support adopting the proposed improvement.
+Examples of dichotomous choice CV surveys include Andersson et al., 2014, Cunha-e-Sa et al. (2012), Evans et al. (2011), Herriges
+et al. (2010) and McConnell (1990). Proposed environmental benefits are typically long lasting, but researchers sometimes
+present survey respondents with a one-time payment or a series of annual installments spread over a few years. For example, in
+Loomis and White’s (1996) meta-analysis of willingness to pay (WTP) for the preservation of rare and endangered species, nine
+of twenty studies included a one-time payment and eleven included perpetual annual payments.
+In this paper, we present three reasons to estimate the value of an ongoing stream of annual benefits with a matching
+ongoing stream of annual payments. First, survey respondents are spared from performing complicated present value
+calculations. When respondents compare their known annual WTP (Kovacs and Larson, 2008) to a proposed annual
+payment, discount rates cancel out in their benefit-cost analysis. When asked to make a one-time payment for a long-lasting
+environmental improvement, respondents must know their personal discount rate and perform the relevant present value
+☆
+The authors are associate professor of economics at the University of Toledo, Toledo, OH; professor of economics at Kenyon College, Gambier, OH; and
+associate professor of environmental sciences at the University of Toledo, Toledo, OH. We acknowledge the United States Department of Agriculture (Grant
+No. 2006-38894-03732) for funding and thank the participants of the Association of Environmental and Resource Economists Session at the 2010 Allied
+Social Sciences Association Meetings for comments, as well as participants at the Heartland Environmental and Resource Economics (HERE) Workshop.
+n
+Corresponding author. Fax: þ 1 419 530 7844.
+E-mail address: kevin.egan@utoledo.edu (K.J. Egan).
+
+http://dx.doi.org/10.1016/j.jeem.2015.05.002
+0095-0696/& 2015 Elsevier Inc. All rights reserved.
+
+124
+
+K.J. Egan et al. / Journal of Environmental Economics and Management 72 (2015) 123–136
+
+calculation, while having complete fungibility of their income across time and no binding budget or liquidity constraints
+(Bond et al., 2009). Second, we conduct a convergent validity test by comparing CV estimates from surveys with one-time
+and ongoing annual payments to annual consumer surplus estimates from a travel cost analysis. We demonstrate that CV
+estimates from surveys with ongoing annual payments better match annual travel cost consumer surplus estimates. Third, a
+behavioral argument based on mental accounting (Thaler, 1999) suggests that survey respondents who mentally set aside a
+fixed annual dollar amount for charitable giving will feel more constrained by a large one-time payment compared to a
+relatively small annual payment. Researchers and policy makers are presumably more interested in what respondents are
+willing to pay annually for an environmental improvement rather than a one-time WTP that is the lesser of either a present
+discounted value of future annual WTPs or current charity budget.
+The study reported here is the first convergent validity test concerning a time horizon in CV surveys and travel cost
+analysis, and also the first to collect non-hypothetical individual time preference data to directly estimate respondents’
+discount rates. Consistent with the experimental economics literature (e.g., Collier and Williams, 1999; Harrison et al.,
+2002), we observed median discount rates in the range of 12.5  15%. These discount rates are greater than the 3 10% range
+normally used in environmental valuation literature, but less than the 20 270% range implied by previous environmental
+valuation surveys that compare CV estimates using different time horizons (Kovacs and Larson, 2008; Bond et al., 2009). This
+suggests that our respondents do not have inordinately high discount rates and that published, high implied discount rates
+could be due to faulty assumptions that respondents are rational, present value discounters with no binding liquidity or
+mental accounting constraints.
+Literature review
+The two most common methods for estimating the value of environmental public goods are the travel cost method and
+CV. It is not unusual to find that value estimates from the travel cost method exceed those from the CV method. For example,
+Carson et al. (1996) survey 83 studies including 616 comparisons of CV to revealed preference (RP) estimates. The authors
+report a sample mean CV/RP ratio of 0.89. While the authors controlled for many factors, they do not mention the time
+horizon for payments utilized in the CV analysis. Since they are only considering ratios, the time horizon is of no concern if
+the CV and RP estimates have the same time horizon, which is likely given the same researchers are implementing both
+methods for each good.
+A more recent meta-analysis by Moeltner and Woodward (2009) concerning benefit transfer for wetland valuation did
+consider the time horizon in the CV surveys. Two of the nine CV studies they considered originally elicited a one-time
+payment, while the other seven elicited perpetual annual payments. Therefore, using a 6% discount rate, the authors
+annualized the two one-time payment CV studies. Obviously, the authors’ choice of this discount rate has a major impact on
+the annualized value.
+Several papers have investigated different payment time horizons in CV studies and the resulting implied discount rates.
+Stevens et al. (1997) survey 88 undergraduate students concerning WTP for restoration of Atlantic salmon. In their split
+sample design, the authors ask half of respondents for a one-time payment and ask the remaining half to pay each year for
+the next five years. Implicit discount rate estimates range from 50% to 270% depending on the scope of the restoration.
+Bateman and Langford (1997) estimate WTP for wetlands restoration in the U.K. They ask every respondent for both a onetime payment and a perpetual annual stream of payments. The authors find “inordinately high” discount rates of 50%, with a
+mean lump sum WTP of d50.86 and an annual WTP of d23.29. Stumborg et al. (2001) report a 40% implied discount rate to
+equate mean present value WTP from a split-sample design with either 3- or 10-year time horizons. More recently, Kovacs
+and Larson (2008) ask for a temporary monthly surcharge to local residents’ water bills to fund an 18% expansion of a local
+public park. The authors conduct a split sample design with four time periods—one, four, seven, and 10 years. When using
+all the information from the payment schedules, the authors find average implied discount rates of 30%. Kim and Haab’s
+(2009) split-sample design include one-time payments, 5- and 10-year annual payments, and perpetual annual payments.
+The authors report implied discount rates ranging from 20% to 100%. Similarly, Bond et al. (2009) conduct a split-sample
+design with three time periods—one, five, and 15 years. Implied discount rates range from 23% to 80%. Related, when the
+authors assume a market discount rate of 5.5%, the present value WTP from the 15-year time horizon is four to nine times
+that of the WTP estimate from a one-time payment. Brouwer et al. (2008) allow respondents to choose between one-time,
+monthly, or annual donations. The authors report a higher mean WTP estimate for the annual contribution versus the onetime payment, implying negative discount rates. However, the authors argue self-selection of the time horizon is likely
+responsible for the unexpected result.
+Similarly, many studies have used actual behavior to estimate discount rates, and these studies typically find discount
+rates well above normal market rates. Looking at the tradeoff between the purchase price and energy consumption of
+window air conditioners, Hausman (1979) finds that American consumers discount the future at a rate of 15 25% per year.
+Hassett and Metcalf (1993) develop a theoretical model and provide simulation results showing that people who are
+uncertain about future energy prices may put off investing in improved energy efficiency even when the investment easily
+passes the benefit-cost test at current energy prices. Looking at the tradeoff between the purchase price, fuel efficiency, and
+safety of automobiles, Dreyfus and Viscusi (1995) find that car buyers discount the future at a rate of 15  21% per year.
+Warner and Pleeter (2001) focus on U.S. military base closings during the 1990s. They find that furloughed military
+personnel routinely choose lump-sum payments over annuities with implicit rates of return of between 17.5% and 19.8%.
+
+K.J. Egan et al. / Journal of Environmental Economics and Management 72 (2015) 123–136
+
+125
+
+In summary, the wide range and high values of the implied discount rates from the existing empirical literature
+underscore the importance of understanding how time horizon affects present value WTP estimates.
+With annual payments, respondents don’t need to perform present value analysis
+While using a one-time payment in the CV scenario may be appealing because it does not require the researcher to
+choose a discount rate to recover present value WTP (Carson et al., 2003), the researcher may be forcing the respondent to
+conduct their own present value analysis instead. Kovacs and Larson (2008) reasonably assume that individuals have a
+constant annual WTP, W i , for the annual stream of benefits provided from a long-lasting public good like improved
+environmental quality. In general, respondents answer “yes” to the CV referendum if
+Wi
+Z Bi ðr; T i Þ;
+r
+where Bi ðr; T i Þ is the present value of the future stream of bids and is equal to
+!
+1
+1
+1
+þ
+þ ::: þ
+;
+Bi ðr; T i Þ ¼ bi
+ð1 þr Þ ð1 þr Þ2
+ð1 þr ÞT i
+
+ð1Þ
+
+ð2Þ
+
+where r is the individual’s discount rate, bi is the per-period bid amount, and Ti is the number of annual bid payments. The
+respondent compares the present value of their WTP to the present value of the bids and answers accordingly. Note that
+with a perpetual annual bid payment, the respondent answers yes if
+W i bi
+Z ;
+r
+r
+
+ð3Þ
+
+which simplifies to
+W i Z bi :
+
+ð4Þ
+
+In this case, the respondent does not need to perform a present value calculation. The respondent simply answers “yes”
+so long as their per period WTP, W i , is greater than the per period bid amount, bi .1
+When asked for a one-time payment, respondents answer “yes” if
+Wi
+Bi
+Z
+;
+ð1 þ r Þ
+r
+
+ð5Þ
+
+where the respondent is offered the one-time bid, Bi . The respondent must compare the present value of their annual
+stream of WTP to the one-time payment. Do we really trust that respondents can make an accurate ad-hoc guess at this
+calculation? Fischhoff and Furby (1988) worry that respondents may not be able to perform “the mental arithmetic needed
+to compute discount rates” (page 170). Their concern is well founded. In a survey of 1269 Americans over the age of 50,
+Lusardi and Mitchell (2011) found that only two thirds of respondents could correctly answer the following question:
+Suppose you had $100 in a savings account and the interest rate was 2% per year. After 5 years, how much do you think
+you would have in the account if you left the money to grow: more than $102, exactly $102, less than $102?
+And just one third of respondents could correctly answer the above question and two additional basic financial literacy
+questions.
+With a series of T ongoing annual payments, the respondent answers “yes” if
+"
+#
+"
+!#
+Wi
+1
+1
+1
+1
+1
+þ
+1
+Z bi
+þ ::: þ
+¼ bi
+:
+ð6Þ
+ð1 þr Þ ð1 þr Þ2
+r
+r
+ð1 þr ÞT
+ð1 þ r ÞT
+This is an even more complicated calculation, though the terms in brackets approach 1/r when either T or r are large.
+Convergent validity analysis
+In this section we present the design and results of an environmental valuation study specifically designed to compare
+travel cost WTP estimates with CV WTP estimates from referenda with varying payment terms. In our split-sample design,
+we present respondents with a CV referendum asking for a one-time payment, ten annual payments, or perpetual annual
+payments. We find that both perpetual annual payments and a series of ten annual payments outperform a one-time
+payment when estimating the value survey respondents place on a long-lasting water quality improvement.
+Survey design
+We use a random population mail survey sent to 3000 households in northwest Ohio concerning proposed wetlands
+restoration near the Maumee Bay State Park Beach located on Lake Erie in northwest Ohio about 20 miles east of Toledo. In
+1
+
+For respondents planning to live in the area for less than Ti years, Eq. (2) simplifies to Eq. (4).
+
+126
+
+K.J. Egan et al. / Journal of Environmental Economics and Management 72 (2015) 123–136
+
+Table 1
+Summary statistics: N ¼ 967.
+Variable
+
+Description
+
+Mean
+
+Std. Dev.
+
+Min.
+
+Max.
+
+Trips1
+Trips2
+Price
+Bid values
+CV vote
+Income
+Gender
+Age
+School
+License
+Env. org.
+
+No. of trips to MBSP next year
+No. of trips to MBSP next year with restored wetlands
+Travel cost of a trip
+Bid value for the water quality improvement
+Response to DC-CV question (yes ¼1, no¼ 0)
+Households before tax income for 2007
+¼ 1 if male; ¼ 0 otherwise
+Respondent’s age
+¼ 1 if any college education; ¼ 0 otherwise
+¼ 1 if own a license; ¼ 0 otherwise
+¼ 1 if belong to env.org.; ¼ 0 otherwise
+
+1.58
+2.08
+52.92
+48.63
+0.47
+68,059
+0.72
+55.8
+0.69
+0.42
+0.07
+
+5.2
+5.8
+33.42
+47.6
+0.50
+41,929
+0.44
+14.9
+0.45
+0.49
+0.25
+
+0
+0
+2.4
+5
+0
+7,500
+0
+18
+0
+0
+0
+
+100
+100
+249.46
+200
+1
+200,000
+1
+82
+1
+1
+1
+
+Table 2
+Original bid values and Turnbull monotonically smoothed bid values (in bold).
+Perpetual annual payments
+
+Ten annual payments
+
+One-time payment
+
+N¼
+
+Bid value
+
+%Yes
+
+Turnbull %Yes
+
+N¼
+
+Bid value
+
+%Yes
+
+Turnbull %Yes
+
+N¼
+
+Bid value
+
+%Yes
+
+Turnbull %Yes
+
+47
+43
+37
+36
+37
+43
+40
+38
+Avg.
+
+$5
+$10
+$15
+$20
+$25
+$30
+$40
+$50
+
+0.70
+0.58
+0.49
+0.50
+0.49
+0.53
+0.30
+0.42
+0.51
+
+0.70
+0.58
+0.50
+Pooled
+Pooled
+Pooled
+0.36
+Pooled
+
+38
+38
+30
+43
+47
+26
+41
+48
+
+$5
+$10
+$15
+$20
+$25
+$30
+$40
+$50
+
+0.63
+0.63
+0.47
+0.51
+0.55
+0.61
+0.46
+0.40
+0.53
+
+0.63
+Pooled
+0.53
+Pooled
+Pooled
+Pooled
+0.46
+0.40
+
+43
+38
+52
+44
+40
+43
+42
+33
+
+$20
+$40
+$60
+$80
+$100
+$120
+$160
+$200
+
+0.47
+0.39
+0.54
+0.43
+0.33
+0.16
+0.29
+0.42
+0.38
+
+0.47
+Pooled
+Pooled
+0.43
+0.32
+0.28
+Pooled
+Pooled
+
+the last section of the survey, we ask all respondents how many trips they expected to take next year given current water
+quality, and how many trips they would take next year given the proposed wetland restoration’s ability to improve the water
+quality at the swimming beach by eliminating the beach advisories due to high bacteria counts.
+In addition, we presented respondents with an incentive-compatible advisory referendum question (Carson and Groves,
+2007; Carson and List, 2014) about the same water quality improvement. Respondents also read a “cheap talk” script
+(Cummings and Taylor, 1999) before answering the referendum question. Our referendum question read “Would you vote
+‘yes’ on a referendum to restore wetlands on nearby public land at Maumee Bay State Park that would lead to the
+improvements summarized in the previous section? The proposed project would cost you $X.” There were three versions of
+the survey with the respondent only receiving one version. The split-sample design varied the time horizon of the payment
+vehicle from a one-time payment (the quoted question), a payment for a finite time of ten years (“The proposed project
+would cost you $X for ten years.”), or a perpetual annual payment (“The proposed project would cost you $X per year.”),
+where the bold font was used in the mailed surveys.
+Data and summary statistics
+Table 1 provides the summary statistics for our sample. Approximately 50% of the 3000 surveys were returned (1426). Of
+these, 967 respondents provided all of the necessary information. Like Misra et al. (1991); Andrews (2001); Thompson et al.
+(2002); and Corrigan et al. (2008), our sample is more male, has higher income, is more educated, and is older than the
+general population.
+The respondents expected to take 1.58 trips on average to Maumee Bay State Park (MBSP) the following year. The average
+number of trips is low given that 52% of the sample expected to take no trips. With the proposed water quality improvement
+at the swimming beach, the average expected number of trips increased 30% to 2.08 trips. Most of this increase is due to
+current visitors taking more trips, as only 3% of the respondents expecting to take zero trips under current conditions
+switched to taking a positive number of trips with the quality improvement.
+Turning to the contingent valuation data, Table 2 shows that bids range from $5 to $50 for surveys with ten annual
+payments or perpetual payments. We used a 25% discount rate to convert perpetual payment bids into one-time payment
+bids ranging from $20 to $200. Across all three surveys, 47% of the respondents voted “yes” on the advisory referendum.
+Among respondents who would visit MBSP next year given the quality improvement, 66% voted “yes”. Among respondents
+who would not visit MBSP next year given the quality improvement, only 27% voted “yes”. Considering the split sample, 51%
+of the respondents asked to make perpetual annual payments voted “yes”, and 53% asked to make ten annual payments
+voted “yes”. Only 38% of the respondents asked for a one-time payment voted “yes”. Assuming our respondents are perfectly
+
+K.J. Egan et al. / Journal of Environmental Economics and Management 72 (2015) 123–136
+
+127
+
+rational present value discounters with no mental accounting or liquidity constraints, these results indicate that
+respondents discounted the future at a rate higher than the 25% rate we used to convert perpetual annual payments into
+a one-time payment.
+To analyze the contingent valuation data we use the Turnbull distribution-free estimator (Turnbull, 1976). Table 2 shows
+there is not a monotonically decreasing percentage of respondents answering “yes” to each of the eight successively higher
+bid values. The Turnbull estimator requires monotonicity. If a higher bid value does not produce a lower percentage of “yes”
+responses, then the bid value is “pooled back” with the previous bid (Haab and McConnell, 2002).2 Table 2 shows the
+minimum amount of smoothing necessary to create a monotonically decreasing percentage of respondents voting “yes” to
+higher bid values.
+Travel cost results
+We use the bivariate Poisson-lognormal random effects count data model (Egan and Herriges, 2006) to analyze the travel
+cost data. We estimate the price of a recreational trip as $0.25 per mile multiplied by round-trip miles plus the opportunity
+cost of time, which is estimated as round-trip hours multiplied by one third of the respondent’s average wage rate. As
+discussed by Awondo et al. (2011), the American Automobile Association reports vehicle operating cost estimates of $0.17
+per mile (gasoline, maintenance, and tires) and depreciation estimates per year per mile of $0.22 for a total of $0.39 per mile.
+By using $0.25 per mile we are including 100% of the vehicle operating cost and 36% of the average vehicle depreciation cost.
+We include only part of the depreciation cost because a vehicle depreciates every year regardless of how much it is driven,
+and recreators likely consider vehicle ownership a sunk cost needed for other purposes. While using one third of the average
+wage rate for the opportunity cost of time is arbitrary, it is the most widely used estimate of the opportunity cost of
+respondents’ time (e.g., Baerenklau, 2010; Egan and Herriges, 2006; Hagerty and Moeltner, 2005; Phaneuf, 1999; Whitehead
+et al., 2008). We used PC-Miler to calculate the round-trip miles and the round-trip hours from the respondent’s zip code to
+MBSP. We calculated a respondent’s average wage rate as the household’s annual income divided by 2000, representing
+forty hours of work per week for 50 weeks.
+Table 3 presents the results from the travel cost model. Respondents that have lower travel cost, higher income, more
+education, are male, are younger, or have a fishing or hunting license all take statistically significantly more trips to MBSP. All
+of these results are as expected. Respondents with lower travel cost can visit MBSP at lower opportunity and will, on
+average, visit more frequently. Assuming outdoor recreation is a normal good, we expect higher income and more educated
+individuals to take more trips, holding travel cost constant. Given that 80% of Ohio anglers are male (Armon, 2013), we
+expect men to take more trips. Closely related, we would expect respondents with fishing or hunting licenses to take more
+trips to MBSP. Young respondents might be expected to engage in more outdoor recreation of all types, including taking
+trips to MBSP. Only belonging to an environmental organization has no statistically significant effect.
+WTP for the wetlands restoration at MBSP can be estimated as the additional consumer surplus from the additional trips
+to MBSP due to the quality improvement. We calculate WTP from this semi-log travel cost model as
+WTP tc ¼
+
+Trips2 Trips1
+
+;
+ βtc;2  βtc;1
+
+ð7Þ
+
+where Trips2 and Trips1 are the reported trip levels, and βtc;2 and βtc;1 are the estimated coefficients on the travel cost
+variable. Table 4 presents estimated WTP for the quality improvement along with a 95% confidence interval. Mean annual
+WTP is $19.
+Contingent valuation results
+We use the Turnbull distribution-free estimator to estimate WTP for the proposed wetlands restoration at MBSP because
+this estimator requires no distributional assumptions for WTP and it is a conservative lower bound estimate of mean WTP
+(Haab and McConnell, 2002). All of the information needed to estimate the lower bound on the population mean WTP is
+given in Table 2. We use Eq. (3.28) from Haab and McConnell (2002),
+M
+X
+n
+
+ELB ðWTPÞ ¼
+
+j¼0
+
+t j ðF nj þ 1  F nj Þ
+
+ð8Þ
+
+where t j denotes the j bid values, M n is the total number of Turnbull monotonically smoothed bid values (i.e., the four bold
+bid values in Table 2), and F nj is the percent of respondents voting “no” who received the jth bid value, and F nj þ 1 is the
+percent of respondents voting “no” who received the jth þ1 bid value. This estimator “is appealing because it offers a
+conservative lower bound on willingness to pay for all non-negative distributions of WTP, independent of the true
+underlying distribution” (Haab and McConnell, 2002, page 74). This method assumes that no respondent has WTP greater
+than the highest bid value, therefore the resulting mean WTP estimate is a lower bound on the actual mean WTP. The
+2
+
+Haab and McConnell (2002) use the percentage of “no” responses, which obviously could be derived from Table 2.
+
+128
+
+K.J. Egan et al. / Journal of Environmental Economics and Management 72 (2015) 123–136
+
+Table 3
+Travel cost model results from a bivariate Poisson-lognormal model (N ¼967)a.
+Variable
+
+Coefficient
+
+p-value
+
+Constant 1
+Constant 2
+Travel cost 1
+Travel cost 2
+Income
+Male
+Age
+Attended college
+Hunting or fishing license
+Environmental org.
+Sigma 1
+Sigma 2
+Rho
+
+0.39
+0.56
+ 3.58
+ 3.30
+0.93
+4.67
+ 0.12
+2.33
+3.35
+2.05
+1.46
+1.48
+0.99
+
+0.085
+0.012
+0.000
+0.000
+0.000
+0.000
+0.000
+0.024
+0.000
+0.201
+0.000
+0.000
+0.000
+
+a
+All variables scaled by 10 except travel cost (scaled by 100) and income
+(scaled by 100,000). LL ¼  2654.49.
+
+Table 4
+WTP estimates.
+Travel cost model (TC)
+
+Contingent valuation model (CV)
+
+Poisson-lognormal random effects count
+data model
+
+Turnbull dist.-free
+estimator
+
+Bound probit model
+
+ELB ðWTPÞ
+
+95% C.I.
+
+Median WTP 95% C.I.
+
+$18
+$24
+$47
+
+($15, $21)
+($20, $28)
+($38, $57)
+
+$26
+$28
+$41
+
+Mean WTP
+TC—perpetual annual additional consumer surplus $19
+CV—perpetual annual payments
+CV—ten annual payments
+CV—one-time payment
+a
+
+95% C.I.a
+
+a
+
+($14, $24)
+($3, $49)
+($3, $50)
+($2, $140)
+
+Estimated using the Krinsky and Robb (1986) technique.
+
+estimated lower bound WTP is asymptotically normally distributed with variance
+
+
+Mn F n 1  F n 
+X
+2
+j
+j
+tj  tj  1 ;
+VðELB ðWTPÞÞ ¼
+n
+T
+j
+j¼1
+
+ð9Þ
+
+where T nj is the total number of respondents for the jth bid value. Using Eq. (8) to estimate the lower bound for mean WTP
+with perpetual annual payments, we find
+ELB ðWTP 1 Þ ¼ $0n0:30 þ $5n0:12 þ $10n0:08þ $15n0:14 þ $40n0:36 ¼ $17:91;
+
+ð10Þ
+
+With ten annual payments, we estimate the lower bound for mean WTP as
+ELB ðWTP 10 Þ ¼ $0n0:37 þ $5n0:1 þ $15n0:07 þ$40n0:06 þ $50n0:40 ¼ $24:04;
+
+ð11Þ
+
+With the one-time payment, we estimate the lower bound for mean WTP as
+ELB ðWTP 1 Þ ¼ $0n0:53þ $20n0:04 þ $80n0:11 þ $100n0:04 þ $120n0:28 ¼ $47:48:
+
+ð12Þ
+
+The WTP estimates are also reported in Table 4 with 95% confidence intervals.
+The Turnbull estimator is a convenient, conservative estimator for WTP, but only a limited number of covariates can be
+included. Therefore, in order to investigate the impact of explanatory variables on the probability respondents vote “yes” in
+the referendum we also estimated a bound probit model following Haab and McConnell (2002). We bounded respondents’
+WTP between $0 and $50 for ongoing payments and between $0 and $200 for the one-time payment in order to parallel the
+Turnbull estimator as closely as possible. The bound probit model does not require monotonicity in the bids so we used the
+original bid values and responses shown in Table 2. We pooled all three versions of the survey together and ran one bound
+probit model, but included a constant and variance coefficient for all three versions of the survey.
+Table 5 reports the results from the bound probit model. Respondents who have lower travel cost to MBSP, who are
+younger, who are more educated, or who belong to an environmental organization are more likely to vote “yes” on the
+advisory referendum. Statistically insignificant explanatory variables include gender and having a fishing or hunting
+license.3 Having a fishing or hunting license was a statistically significant regressor for the travel cost model, while
+
+K.J. Egan et al. / Journal of Environmental Economics and Management 72 (2015) 123–136
+
+129
+
+Table 5
+CV referendum results (N ¼ 967). Bound Probit Model ($0 oWTPo $Highest Bid þ $1)a.
+Variable
+
+Coeff.
+
+p-value
+
+Constant
+Travel cost
+Male
+Age
+Attended college
+Hunting or fishing license
+Environmental org.
+Ver. 1 (annual payment)
+Ver. 2 (10 year payment)
+Sigma ver. 1 (annual payment)
+Sigma ver. 2 (10 year payment)
+Sigma ver. 3 (one-time payment)
+
+ 1.50
+ 0.082
+0.22
+ 0.061
+4.84
+1.29
+9.42
+4.13
+5.89
+9.38
+8.44
+15.20
+
+0.560
+0.001
+0.830
+0.061
+0.001
+0.17
+0.001
+0.023
+0.003
+0.000
+0.000
+0.001
+
+a
+$1 is added to the highest bid so for those respondents receiving the highest bid,
+when maximizing the likelihood function, a ln(0) error is avoided in the income/bid
+term: ln[(bound-bid)/bid]. LL¼  602.40.
+
+belonging to an environmental organization was not. This seems reasonable since a license is directly related to use value,
+while belonging to an environmental organization may correlate more highly with a respondent’s nonuse value.
+For the bound probit model median WTP can be estimated as
+
+
+MD WTP bp;i ¼
+
+max bidi
+
+;
+1 þexp zi γ
+
+ð13Þ
+
+where zi denotes the covariates and γ denotes the coefficients. The median WTP estimates from the bound probit model
+(Table 4) are similar to the estimates using the Turnbull distribution-free estimator. The 95% confidence intervals for the
+bound-probit WTP estimates are larger than those from the Turnbull estimator. We think this is due to insufficient data to
+determine the right tail of the WTP distribution. Like Carson et al. (2003), we chose the bids to capture data points around
+the median population WTP, as that is our statistic of interest. We arrived at ex ante estimates of median WTP in pre-test
+surveys where we iteratively raised the bids until approximately 50% of the respondents voted “yes” overall. Carson and
+Groves (2007, page 185) emphasize the importance of not asking “implausibly high or low cost for providing the good” since
+the respondents may substitute what they consider to be a more realistic cost. Our concern was with implausibly high cost
+estimates in the advisory referendum. Awondo et al. (2011) estimated it would cost $1.8 million to restore the wetlands
+discussed in the survey. Given our population of 621,000 households in the 23 counties of northwest Ohio, the average cost
+to each household for the provision of the environmental good is less than $3.4 In order to avoid including implausibly high
+cost estimates, we did not include higher bids that would have allowed us to capture the right tail of the distribution. Using
+the Turnbull estimator avoids any distributional issues.
+As in previous studies, we find relatively small differences in the mean WTP estimates across the three time horizon
+versions, which lead to large differences in present value WTP at market discount rates or large implied discount rates to
+equate present value WTP.
+Convergent validity test
+Table 6 shows present value WTP estimates for various discount rates using the results from the travel cost model and
+the Turnbull distribution-free estimator presented in Table 4. With perpetual payments, present value CV WTP estimates are
+always similar to present value travel cost WTP estimates regardless of the discount rate. With ten annual payments, the
+present value of the CV WTP estimate roughly equals the present value of the travel cost WTP estimate at a discount rate of
+17.5%. While it is not obvious from Table 6, a discount rate equal to 68% equates the present value WTP from the travel cost
+model with the present value WTP from the one-time payment version.5
+Our convergent validity test supports ongoing payments over one-time payments for the long-lived environmental good
+considered in this study. Present value WTP estimates from perpetual annual payments closely match the present value WTP
+estimates from the travel cost model given that both methods give similar mean perpetual annual WTP estimates—$19 for
+the travel cost model and $18 for CV. For ten annual payments, the discount rate that equates the present value WTP
+3
+We also ran the bound probit model on each version separately. Largely the same explanatory variables were statistically significant for the perpetual
+annual payment and ten-annual-payment versions but no explanatory variables were statistically significant for the one-time payment version.
+4
+We are happy to report that, in part due to our study showing its efficiency, the wetlands have now been restored. Preliminary results show they are
+improving water quality at MBSP as predicted (Dwyer et al., 2014).
+5
+For the travel cost model, the present value of the additional consumer surplus equals $19/r. For the one-time payment version of the CV survey, the
+present value of WTP equals $47/(1 þ r) assuming as in eq. (5) that the payment occurs one year in the future. Both present value calculations yield an
+answer of $28 with a discount rate of 68%.
+
+130
+
+K.J. Egan et al. / Journal of Environmental Economics and Management 72 (2015) 123–136
+
+Table 6
+Present value WTP estimates from the travel cost (TC) model and the contingent valuation (CV) method using various discount rates.
+Discount rate
+
+PV(WTP)
+PV(WTP)
+PV(WTP)
+PV(WTP)
+a
+
+from:
+from:
+from:
+from:
+
+TC—perpetual annual additional consumer surplus
+CV—perpetual annual payments
+CV—ten annual payments
+CV—one-time payment
+
+5%
+
+7.5%
+
+10%
+
+12.5%
+
+15%
+
+17.5%
+
+20%
+
+$380
+$360
+$185
+$45a
+
+$253
+$240
+$165
+$44
+
+$190
+$180
+$148
+$43
+
+$152
+$144
+$133
+$42
+
+$127
+$120
+$121
+$41
+
+$109
+$103
+$110
+$40
+
+$95
+$90
+$101
+$39
+
+In order to be consistent with the rest of the table, we assume one-time payments occur one year in the future.
+
+estimates falls comfortably within the range of values found in studies using actual behavior to estimate discount rates (e.g.,
+Hausman, 1979; Warner and Pleeter, 2001) and in economic experiments estimating discount rates (e.g., Collier and
+Williams, 1999; Harrison et al., 2002). For the one-time payment, the discount rate that equates the present value WTP
+estimates falls outside of this range of values found in studies using actual behavior to estimate discount rates.
+Mental accounting
+Many of the papers we discussed in the literature review find that CV respondents are surprisingly insensitive to the time
+horizon of payments (e.g., Bateman and Langford, 1997). One explanation could be that individuals really do have
+“inordinately high” discount rates, however in this section we will show that our respondents’ discount rates are in line with
+the existing literature (e.g., Collier and Williams, 1999).
+Referring to the results of a study estimating WTP for wetland restoration in the English Broadland, Bateman and
+Langford argue that
+Respondents have a deep concern for the Broadland, so they are WTP a large proportion of their annual countryside/
+recreation budget towards its preservation such that budget constraints quickly bind upon their attempt to convert this to a
+once-and-for-all payment. Here then the similarity between the two WTP means is indicative of respondents taking the
+question seriously, weighing together all pertinent factors (such as relevant budget constraints) and answering as honestly
+as possible. (p. 579)
+Because of these binding budget constraints, the authors conclude that “we should not immediately interpret once-andfor-all sums as discounted perpetuity benefit values” (p. 581). Bateman and Langford’s reasoning is not consistent with
+neoclassical theory, which assumes that because wealth is fungible there is no reason for participants to partition their
+outdoor recreation budget from their grocery budget or from their rainy day fund. But the authors’ reasoning is entirely
+consistent with the behavioral concept of “mental accounting”. Thaler (1999) points out that individuals routinely partition
+their wealth either formally or informally into separate budgets—groceries, travel, entertainment, Christmas, charity,
+retirement, etc. And because some of these budget constraints bind in any given period while others do not, this partitioning
+has a meaningful impact on behavior. If CV survey respondents engage in this kind of mental accounting, then this is
+another reason for researchers to choose ongoing annual payments over a one-time payment. While budget constraints may
+bind in either case, they are less likely to bind when respondents are presented with a smaller ongoing payment rather than
+a larger one-time payment.
+To date no study has been able to test this mental accounting hypothesis in a contingent valuation model because no one
+has directly estimated respondents’ discount rates. Our survey includes a series of nonhypothetical time-preference
+questions, allowing us to estimate respondents’ discount rates and to compare these with the implicit discount rates
+necessary to equate WTP estimates from the one-time and ongoing-payment versions of our CV survey. We find that our
+respondents have reasonable discount rates in the context of a reward lottery.
+Discount rate survey
+We follow the experimental economics procedures from Harrison and Williams (2002) to derive non-hypothetical
+estimates of respondents’ discount rates using a reward lottery of $1000 or more. The reward lottery form is provided in full
+in Fig. 1. At the end of the mail survey, we informed respondents that we would draw one of their names at random on June
+27, 2008, and that individual would receive their preferred payment option for one randomly chosen prize alternative. The
+date of the random reward drawing was one month after the third and final mailing of the survey to non-respondents, thus
+they would either receive the prize in a few months or a few months plus one year. The reward was made large enough,
+$1000 or more, so that respondents would carefully consider the exercise.
+If a respondent circled payment option A for all fifteen payoff alternatives, we estimate her discount rate to be greater
+than 100% per year. If a respondent circled payment option B for all fifteen payoff alternatives, we estimate her discount
+rate to be less than 2% per year. And if, for example, a respondent circled payment option A for the first nine payoff
+alternatives but then circled payment option B for the remaining six, we would estimate her discount rate to be between
+17.5% and 20% per year. Of the full sample of 967 respondents, 726 (75%) completed the non-hypothetical discount rate
+
+K.J. Egan et al. / Journal of Environmental Economics and Management 72 (2015) 123–136
+
+131
+
+Reward Lottery
+Please complete this form to enter the lottery drawing, where one winner will receive
+between $1,000 and $2,000. This information will be used only to enter you into the drawing
+and pay your requested amount. Your answers to the survey are strictly confidential; the survey
+will be separated from this form as soon as it arrives. Thank you for your help with this research!
+
+One survey respondent will receive one of the 15 cash prizes below in exchange for completing
+this survey, where the prize will be chosen at random. For each of the 15 prizes, please circle the
+amount you would rather receive: the dollar amount in PAYMENT OPTION A on June 27,
+2008, or the dollar amount in PAYMENT OPTION B on June 27, 2009. For example, if you are
+randomly selected as the winner, and Prize 6 is randomly chosen as the prize, we will send you a
+check for $1000 on June 27, 2008 if you circled the letter A in the last column, or you will be
+sent a check for $1100 on June 27, 2009 if you circled the letter B.
+Payoff Alternative
+
+Prize 1
+Prize 2
+Prize 3
+Prize 4
+Prize 5
+Prize 6
+Prize 7
+Prize 8
+Prize 9
+Prize 10
+Prize 11
+Prize 12
+Prize 13
+Prize 14
+Prize 15
+
+Payment Option A
+(Pays amount
+below on
+June 27, 2008)
+$1000
+$1000
+$1000
+$1000
+$1000
+$1000
+$1000
+$1000
+$1000
+$1000
+$1000
+$1000
+$1000
+$1000
+$1000
+
+Payment Option B
+(Pays amount
+below on
+June 27, 2009)
+$1020
+$1030
+$1040
+$1050
+$1075
+$1100
+$1125
+$1150
+$1175
+$1200
+$1250
+$1350
+$1500
+$1750
+$2000
+
+Annual
+Interest Rate
+
+2.0%
+3.0%
+4.0%
+5.0%
+7.5%
+10.0%
+12.5%
+15.0%
+17.5%
+20.0%
+25.0%
+35.0%
+50.0%
+75.0%
+100.0%
+
+Preferred
+Payment Option
+(CIRCLE
+A OR B)
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+A
+B
+
+To contact you if you win, please write your name and then either your address, phone number
+or e-mail address.
+
+Name _______________________________________
+Address _____________________________________
+Cite, State Zip ________________________________
+Or
+Phone Number ________________________________
+Or
+E-mail address ________________________________
+Fig. 1. Reward lottery form.
+
+survey at the end of the mail survey. A 25% drop-out rate seems reasonable for a possibly mentally challenging exercise at
+the end of a mail survey.
+
+132
+
+K.J. Egan et al. / Journal of Environmental Economics and Management 72 (2015) 123–136
+
+300
+
+Frequency
+
+250
+200
+150
+100
+
+50
+0
+
+Discount Rate (APR)
+a,b
+
+Fig. 2. Non-hypothetical discount rate results (N ¼726) .
+a
+If a respondent always chose payment option B this implies a personal discount rate of 2% or less since even for prize 1 the respondent chose $1020 in one
+year and a few months (payment option B) versus $1000 in a few months (payment option A).
+b
+If a respondent always chose payment option A this implies a personal discount rate of “more” than 100% since even for prize 15 the respondent chose
+$1000 in a few months (payment option A) versus $2,000 in one year and a few months (payment option B).
+
+Table 7
+Implied discount rates equating present value WTP estimates from the three different CV time horizon payment options.a
+
+One-time payment
+Ten annual payments
+a
+
+Ten annual payments
+
+Perpetual annual payments
+
+104%
+
+
+62%
+15%
+
+Implied discount rates based on the Turnbull distribution-free WTP estimates.
+
+Results
+Fig. 2 presents the results from the non-hypothetical discount rate survey.6 From the sample of respondents completing
+the discount rate survey (N ¼726), 25% always chose payment option A and 34% always chose payment option B. The
+remaining 41% at some point switched from payment option A to payment option B indicating the bounds for their personal
+discount rate for this exercise. Our median discount rate is in the 17.5 20% range, which is lower than Harrison et al.’s 28%
+estimate, but is exactly equal to the median from a similar study by Collier and Williams (1999). An alternative, more
+conservative estimate uses only the subset of respondents who at some point switched from payment option A to payment
+option B; the median discount rate for this subset is in the 12.5  15% range. We say this is more conservative because
+respondents choosing one prize option exclusively may not have carefully considered the exercise.
+As discussed in the literature review, several papers have investigated different payment time horizons in CV studies and
+the resulting implied discount rates. In Table 7 we present this information for our survey data, (i.e., calculating the implied
+discount rates that equate the present value of the CV WTP estimates from Table 4). The implied discount rate that equates
+the present value of the WTP estimate for ten annual payments with that for perpetual annual payments is 15%, which can
+also be seen in Table 6 where at a 15% discount rate the present value WTP is approximately $120 for both these time
+horizon versions. This discount rate falls within the 12.5  20% range we find in our time preference survey.
+The implied discount rate that equates the present value of the perpetual annual payments with the one-time payment is
+62%. The implied discount rate that equates the present value of the ten annual payments with the one-time payment is
+104%. These estimates fall within the 20 270% range we identify in our review of the implied discount rate literature, but
+they fall well outside of the 12.5  20% range we find using our nonhypothetical time preference survey. In their extensive
+review of the time preference literature Frederick et al. (2002) explain that individuals’ discount rates are highly context
+dependent, varying depending on the size of the stakes, time frame, and whether individuals face a loss or a gain. Still, we
+find it hard to believe that differences in the context of our CV and time preference survey are so great as to explain
+differences in discount rates as large as an order of magnitude.
+Taken together, the results presented in this section support the hypothesis that mental accounting at least partly
+explains the surprisingly modest difference between one-time WTP and annual WTP when presented with ongoing
+payments. Of course, for some households liquidity constraints could also play a role. Large one-time payments may bump
+6
+It is also possible to include these exogenously determined individual discount rates as explanatory variables in the bound probit model. We
+attempted this, and the results weakly supported our conclusions, but none of the exogenous rates were statistically significant explanatory variables so we
+do not present the results.
+
+K.J. Egan et al. / Journal of Environmental Economics and Management 72 (2015) 123–136
+
+133
+
+up against respondents’ binding mental budget constraints (or liquidity constraints). This leads to WTP estimates that
+suggest “inordinately high” implied discount rates when compared with WTP estimates from surveys asking for ongoing
+payments. In this section we show that these high implied discount rates are not consistent with the results of a
+nonhypothetical time preference survey or with the implied discount rates equating the present value WTP from surveys
+asking for ten annual or perpetual annual payments.
+Convergent validity sensitivity analysis
+Here we investigate the sensitivity of our convergent validity results from the previous section. We begin with the travel
+cost model. Recent papers indicate it may be appropriate to use a higher fraction of the wage rate for the opportunity cost of
+travel time. Using drivers’ speeding behavior as a function of the gasoline price, Wolff (2014) concludes 50% of the wage rate
+is a better approximation of the average value of time. Fezzi et al. (2013) use actual driving choices to coastal beaches on the
+Italian Riviera, where drivers choose between slower open access roads or faster toll roads. The authors conclude that 75% of
+the wage rate is the best approximation of the average value of time. These results in mind, we re-run our travel cost model
+assuming the opportunity cost of time in the travel cost variable is now estimated using 50% of the respondent’s average
+wage rate and then 75%, versus our base case of 33%. Table 8 presents these results. As expected, using a larger fraction of
+the wage rate shifts the recreation demand curve up leading to larger consumer surplus estimates and larger WTP estimates
+for the proposed water quality improvement. The mean WTP increases from $19 in the base case using 33% of the average
+wage rate to $24 using 50% of the average wage rate to $42 using 50% of the average wage rate. There is little a priori basis to
+choose among these alternatives. However, directly comparing log-likelihood values as in Egan et al. (2009), we find that the
+preferred model is that using 33% of the wage rate. Assuming a 50% fraction leads to a slightly worse fit (  2658 vs.  2654).
+Assuming a 75% fraction leads to a worse fit still (  2696 vs.  2654).
+In terms of the convergent validity test, assuming a larger fraction of the wage rate increases the annual WTP estimate
+from the travel cost model, and thus increases the divergence between the travel cost and CV WTP estimates. Table 9 shows
+the present value WTP estimates for various discount rates using the results from the travel cost model and the Turnbull
+distribution-free estimator. For all discount rates up to 20% the alternative travel cost specifications increase divergence
+between travel cost WTP estimates and the one-time CV WTP estimate. This reinforces the results from our convergent
+validity test from the previous section. At any reasonable discount rate, CV WTP estimates from surveys with ongoing
+payments are more consistent with the annual stream of WTP estimates from the travel cost model.
+To test the sensitivity of our CV results, we reestimate our WTP values using a basic probit. With ongoing payments our
+new mean WTP estimates differ from those presented in Table 4 by only a few dollars. With the one-time payment the new
+mean WTP estimate is $18, versus $47 for the Turnbull. However, the 95% confidence interval for this new WTP estimate is
+large and includes negative WTP values, a common outcome when using the unbounded probit model.
+Additionally, we could investigate the impact of respondent uncertainty in the advisory CV referendum adjusting
+responses based on answers to a follow-up question providing a 5-point certainty scale. However, incorporating uncertainty
+would reduce WTP estimates for any of the three time horizons (Li and Mattsson, 1995; Champ, 1997). This would not
+change our conclusion given that all of the CV WTP estimates are already lower than the travel cost WTP estimate.
+In conclusion our sensitivity analysis strengthens the results from the convergent validity test, giving us more confidence
+that annual payments in a CV survey best match the annual stream of WTP from a travel cost model. More sensitivity
+analysis could be done, especially regarding the travel cost model, where we could also consider variations in the assumed
+cost per mile. However, our assumed cost of $0.25 per mile is already quite conservative compared with the IRS’s official
+reimbursement rate of $0.505 per mile in 2008. Using a higher cost per mile would increase the divergence between travel
+cost and one-time CV WTP estimates in the same way that increasing the fraction of the wage rate did.
+Conclusions
+In this paper we have presented three arguments for using ongoing annual payments in CV surveys. First, the
+respondent’s personal discount rate is irrelevant when comparing a stream of annual benefits with a stream of annual
+payments. Second, we find that the WTP estimates from a CV survey with ongoing annual payments better match WTP
+Table 8
+Travel cost model perpetual annual WTP estimates using alternative assumptions for the opportunity cost of time.
+Travel cost model
+
+Base case: 33% of wage rate
+50% of wage rate
+75% of wage rate
+a
+
+Mean price
+
+Mean annual WTP
+
+95% C.I.a
+
+Log-likelihood
+
+$52.92
+$65.83
+$85.19
+
+$19
+$24
+$42
+
+($14, $24)
+($17, $30)
+($28, $54)
+
+ 2654.5
+ 2658.3
+ 2696.3
+
+Estimated using the Krinsky and Robb (1986) technique.
+
+134
+
+K.J. Egan et al. / Journal of Environmental Economics and Management 72 (2015) 123–136
+
+Table 9
+Present value WTP with the travel cost model (TC) and the Turnbull distribution-free estimator (CV); Similar to Table 6, with alternative travel cost
+specifications added.
+Discount rate
+
+PV(WTP)
+PV(WTP)
+PV(WTP)
+PV(WTP)
+PV(WTP)
+PV(WTP)
+a
+
+from:
+from:
+from:
+from:
+from:
+from:
+
+TC—perpetual annual additional consumer surplus
+TC—perpetual annual additional consumer surplus
+TC—perpetual annual additional consumer surplus
+CV—perpetual annual payments
+CV—ten annual payments
+CV—one-time payment
+
+75% of wage rate
+50% of wage rate
+33% of wage rate
+
+5%
+
+10%
+
+15%
+
+20%
+
+$840
+$480
+$380
+$360
+$185
+$45a
+
+$420
+$240
+$190
+$180
+$148
+$43
+
+$280
+$160
+$127
+$120
+$121
+$41
+
+$210
+$120
+$95
+$90
+$101
+$39
+
+In order to be consistent with the rest of the table, we assume one-time payments begin (and end) one year into the future.
+
+estimates from a travel cost survey. Third, we make the behavioral argument that respondents are less likely to face a
+binding mental accounting budget constraint when facing ongoing annual payments. Considered together, these three
+arguments make a strong case for matching the duration of a CV survey’s payments with the duration of the proposed
+benefits, which will most often mean presenting survey respondents with ongoing annual payments.
+Carson et al. (2003, page 263) state that there is “no obvious a priori basis on which to choose between the lump sum and
+the annual payment schemes.” This paper continues the very limited prior research addressing this issue, with our findings
+supporting annual payments. Carson et al. chose a one-time payment in part to be more conservative as in present value
+terms a one-time payment leads to lower WTP than annual payments. We have provided evidence with our convergent
+validity test, and our mental accounting argument, that one-time payments lead to present value WTP that is too small.
+Moreover, Carson et al. argue for one-time payments since they, “have the advantage of eliminating the need to determine
+what rate ought to be applied to discount future payments.” (page 263) Carson et al. are pointing out that by asking a onetime payment, the resulting WTP is already present value, thus short cutting the usual need by the researcher to assume a
+discount rate for future benefits, for example, is as needed if one wanted to present the present value of annual WTP from
+the travel cost model. However, as we have discussed, if we assume respondents have known annual WTP for a long-lived
+environmental good, and the researcher presents the respondent a one-time payment, present value analysis still needs to
+be conducted. The researcher has now pushed the task onto the respondent, whom is likely to be ill-suited to the task.
+As discussed in the literature review section, previous studies have found implied discount rates ranging from 20% to 270%
+to equate present value WTP from CV surveys with different time horizons. However, these estimates may be tainted by the
+difficulty of the discounting exercise and the existence of mental accounting budgeting constraints. When we use a
+nonhypothetical time preference survey to estimate discount rates for our sample, we find median discount rates in the range
+of 12.5 20%. But when comparing one-time CV WTP estimates with present value WTP from annual payments, we calculate
+implicit discount rates as high as 162%. We agree with Bond et al. (2009) that, “respondents do not behave in strict accordance
+to the context of net present value analysis at market rates, and as such, … true willingness to pay may be greater than that
+implied by the standard lump-sum payment vehicle” (p. 2757). In other words, the high implied discount rates are the result of
+CV surveys including one-time aka lump-sum payment vehicles that result in respondents having difficulty with the present
+value analysis forced upon them or due to the existence of mental accounting budgeting constraints.
+However, Bond et al. (2009) also state that using ongoing annual payments is “more complex for respondents” (p. 2757).
+We disagree with this conclusion, as we have shown that if respondents have known annual WTP, they need not do any
+discounting if presented with a perpetual annual payment, but can instead simply compare their annual WTP to the annual
+bid. We do agree with Bond et al. (2009) that ongoing annual payments may be more realistic, as usually payments for
+quasi-public goods, such as local zoos, science centers, or community recreation centers, all ask for an annual membership
+payment commensurate with the flow of annual services provided. In many instances the environmental public goods
+researchers are valuing are best thought of as assets providing a flow of annual services into the future, such as, in this paper,
+the restored wetlands providing the service of improved water quality, or the preservation of rare and endangered species
+(Loomis and White, 1996). Some might argue that perpetual payments lack realism for respondents who only plan to live in
+an area for a few years. In our study, for example, University of Toledo students may plan to leave northwest Ohio within the
+next four years, at which point they would presumably no longer make the annual payments named in ongoing-payment
+versions of our CV survey. But when they leave northwest Ohio, they will also lose access to the proposed improvements at
+Maumee Bay State Park. When dealing with long-lasting local public goods like water quality at a state park, ongoing annual
+payments match the duration of the payment with the duration of the benefits even for those who do not expect to stay in
+the area in the long term. Indeed this matches the assumption made in the travel cost framework, where visitors are
+assumed to continue their future stream of higher trips and extra travel cost expenses to match the future stream of higher
+quality at the visited site.
+We recognize that difficulty discounting and mental accounting budget issues are not the only explanations for the
+apparently near-sighted behavior of our respondents. The first could be that our respondents simply do not think about the
+future. This is not consistent with our data. Namely, our discount rate survey shows that our respondents do think about the
+
+K.J. Egan et al. / Journal of Environmental Economics and Management 72 (2015) 123–136
+
+135
+
+future. Our median discount rate estimate is not inordinately high, and is in fact in line with what has been found in other
+similar experimental studies (e.g., Collier and Williams, 1999).
+A second alternative explanation for our results is that respondents did not take the valuation task seriously. There are at
+least two reasons to reject this explanation. First, factors that we would expect to influence voting behavior—age,
+educational attainment, distance to the site, having a hunting or fishing license, and environmental membership—do
+influence voting behavior. As Table 5 shows, all of these variables are significant determinants of CV-referendum voting
+behavior, and all have the expected sign. Second, 24% of the respondents wrote a comment on the back of the survey in the
+“comments” section. Many indicated strong feelings regarding the restoration of wetlands in Northwest Ohio.
+Finally, it is also possible that respondents took every aspect of the valuation survey seriously except the payment term. A
+cynical conclusion is that some respondents simply ignore time horizons, focusing only on the dollar value presented in the
+survey, and ask themselves if their WTP is greater than this dollar value? If this is true, then the crucial question is what
+WTP do they have in mind–an annual WTP or a one-time WTP? Our conjecture is that annual WTP is more likely because it
+matches the annual stream of benefits the proposed environmental improvements would provide. In this case, an annual
+payment vehicle is more justified.
+Future research could investigate how respondents are considering the time horizon when they choose their advisory
+vote. Researchers could replicate the vast “cheap talk” literature used to focus the respondent on their budget constraint,
+expanding it to “cheap time horizon talk” that motivates respondents to focus attention on the time horizon of the
+payments.7 For example, it may be important that respondents see the bid both as an annual amount and total cost over a
+certain number of years so they see this as a reoccurring payment8. Fischhoff and Furby (1988) state researchers need to
+consider “special sensitivity to respondents’ capacity for mental arithmetic. For example, respondents asked about monthly
+installments may not realize the annual payment involved” (p. 168). As Smith (1992) discusses, time horizon issues are not
+unique to CV studies, with studies relying on actual revealed choices also showing what economists would describe as
+irrational behavior. We believe it is important for future research to investigate more fully how respondents are considering
+various time horizon payments when they are answering CV studies, and our conclusions from this paper are to simply
+match the time horizon of the payment to the time horizon of the environmental good—environmental goods providing
+ecosystem services over many years should be valued with a CV study using annual payments.
+References
+Andersson, H., Hammitt, J.K., Lindberg, G., Sundstrom, K., 2014. Willingness to pay and sensitivity to time framing: a theoretical analysis and an application
+on car safety. Environ. Resour. Econ 56, 437–456.
+Andrews, T.P., 2001. A contingent valuation survey of improved water quality in the Brandywine river: an example of applied economics in the classroom.
+Pa. Econ. Rev. 10 (1), 1–13.
+Armon, R., 2013. Fishing hooks more Ohio enthusiasts. Akron Beac. J.
+Awondo, S.N., Egan, K.J., Dwyer, D.F., 2011. Increasing beach recreation benefits by using wetlands to reduce contamination. Mar. Resour. Econ. vol. 26, 1–15.
+Baerenklau, K.A., 2010. A latent class approach to modeling endogenous spatial sorting in zonal recreation demand models. Land Econ. vol. 86 (4), 800–816.
+Bateman, I.J., Langford, I.H., 1997. Non-users’ willingness to pay for a national park: an application and critique of the contingent valuation method. Reg.
+Stud. vol. 31.6, 571–582.
+Bond, C.A., Cullen, K.G., Larson, D.M., 2009. Joint estimation of discount rates and willingness to pay for public goods. Ecol. Econ. 68, 2751–2759.
+Brouwer, R., van Beukering, P., Sultanian, E., 2008. The impact of the bird flu on public willingness to pay for the protection of migratory birds. Ecol. Econ.
+64, 575–585.
+Collier, M., Williams, M.B., 1999. Eliciting individual discount rates. Exp. Econ. vol. 2, 107–127.
+Corrigan, J.R., Kling, C.L., Zhao, J., 2008. Willingness to pay and the cost of commitment: an empirical specification and test. Environ. Resour. Econ. 40,
+285–298.
+Carson, R.T., Flores, N.E., Martin, K.M., Wright, J.L., 1996. Contingent valuation and revealed preference methodologies: comparing the estimates for quasipublic goods. Land Econ. 72 (1), 80–99.
+Carson, R.T., Mitchell, R.C., Hanemann, M., Kopp, R.J., Presser, S., Ruud, P., 2003. Contingent valuation and lost passive use: damages from the exxon valdez
+oil spill. Environ. Resour. Econ. 25, 257–286.
+Carson, R.T., Groves, T., 2007. Incentive and informational properties of preference questions,. Environ. Resour. Econ. Vol. 37, 181–210.
+Carson, R.T., Groves, T., List, J.A., 2014. A theoretical and experimental exploration of a single binary choice. J. Assoc. Environ. Resour. Econ. 1 (½), 171–207.
+Champ, Patricia A., 1997. Using donation mechanisms to value nonuse benefits from public goods. J. Environ. Econ. Manag. 33, 151–162.
+Cummings, R.G., Taylor, L.O., 1999. Unbiased value estimates for environmental goods: a cheap talk design for the contingent valuation method. Am. Econ.
+Rev. 89 (3), 649–665.
+Cunha-e-Sa, M.A., Madureira, L., Nunes, L.C., Otrachshenko, V., 2012. Protesting and justifying: a latent class model for contingent valuation with attitudinal
+data. Environ. Resour. Econ. 52, 531–548.
+Dreyfus, Mark K., Viscusi, W., 1995. Rates of time preference and consumer valuations of automobile safety and fuel efficiency. J. Law Econ. 38 (1), 79–105.
+Dwyer, Daryl, Jackwood Ryan, Mayher Matthew, 2014. Natural Treatment Systems to Improve Nearshore Health and Reduce Nonpoint Source Pollution.
+Poster available at: 〈http://www.utoledo.edu/nsm/lec/research/errl/pdfs/Wetlands%20and%20Sedimentation%20Pond%20Poster.pdf〉.
+
+7
+For example, we now include this statement in our CV surveys asking for perpetual annual payments, “Consider this to be an annual payment for the
+foreseeable future which would exist unless voters passed a future changed referendum.” This may help to address Carson et al.’s (2003) concern that the
+future is uncertain so one-time payments are preferred. While certainly true, in any actual referendum there is always some uncertainty that a vote today
+could be overturned by a new referendum and vote in the future. We leave it to future research to consider alternative language. Moreover, the annual WTP
+estimates from the travel cost model have the same concerns about the future, where we are assuming the current recreators will continue to provide the
+stream of higher trips in future years just like in the CV context we are assuming the current recreators will continue to pay the annual payment.
+8
+For example, we now include in our CV surveys asking for perpetual annual payments, “The proposed project would cost you $100 annually. Keep in
+mind that over 10 years this costs you $1000”.
+
+136
+
+K.J. Egan et al. / Journal of Environmental Economics and Management 72 (2015) 123–136
+
+Egan, K.J., Herriges, J.A., 2006. Multivariate count data regression models with individual panel data from an onsite sample. J. Environ. Econ. Manag. 52,
+567–581.
+Egan, K.J., Herriges, J.A., Kling, C.L., Downing, J.A., 2009. Valuing water quality as a function of water quality measures. Am. J. Agric. Econ. 91 (1), 106–123.
+Evans, M.F., Poulos, C., Smith, V.K., 2011. Who counts in evaluating the effects of air pollution policies on households? Non-market valuation in the presence
+of dependencies. J. Environ. Econ. Manag. 62 (1), 65–79.
+Fezzi, C., Bateman, I.J., Ferrini, S., 2014. Using revealed preferences to estimate the value of travel time to recreation sites 67, 58–70.
+Fischhoff, Baruch, Furby, Lita, 1988. Measuring values: a conceptual framework for interpreting transactions with special reference to contingent valuation
+of visibility. J. Risk Uncertain. 1, 147–184.
+Frederick, S., Loewenstein, G., O’Donoghue, T., 2002. Time discounting and time preference: a critical review. J. Econ. Lit. XL, 351–401.
+Haab, T.C., McConnell, K.E., 2002. Valuing Environmental and Natural Resources, The Econometrics of Non-Market Valuation,. Edward Elgar Publishing, Inc,
+Massachusetts, USA.
+Hagerty, D., Moeltner, K., 2005. Specification of driving costs in models of recreation demand. Land Econ. 81, 127–143.
+Harrison, G.W., Lau, M.I., Williams, M.B., 2002. Estimating individual discount rates in Denmark: a field experiment. Am. Econ. Rev. 92 (5), 1606–1617.
+Herriges, J., Kling, C., Liu, C., Tobias, J., 2010. What are the consequences of consequentiality? J. Environ. Econ. Manag. 59, 67–81.
+Hassett, Kevin, Metcalf, Gilbert, 1993. Energy conservation investment: do consumer discount the future correctly? Energy Policy 21 (6), 710–716.
+Hausman, Jerry, 1979. Individual discount rate and the purchase and utilization of energy-using durables. Bell J. Econ. 10 (1), 172–183.
+Kim, S.-I., Haab, T.C., 2009. Temporal insensitivity of willingness to pay and implied discount rates. Resour. Energy Econ. 31, 89–102.
+Kovacs, K.F., Larson, D.M., 2008. Identifying individual discount rates and valuing public open space with stated-preference models. Land Econ. 84 (2),
+209–224.
+Krinsky, I., Robb, A.L., 1986. An approximation of the statistical properties of elasticities. Rev. Econ. Stat. 68 (4), 715–719.
+Loomis, J.B., White, D.S., 1996. Economic benefits of rare and endangered species: summary and meta-analysis,. Ecol. Econ. 18, 197–206.
+Li, Chuan-Zhong, Mattsson, Leif, 1995. Discrete choice under preference uncertainty: an improved structural model for contingent valuation. J. Environ.
+Econ. Manag. 28, 256–269.
+Lusardi, A., Mitchell O.S., 2011. Financial Literacy and Planning: Implications for Retirement Wellbeing, NBER. Working Paper No. 17078.
+McConnell, K.E., 1990. Models for referendum data: the structure of discrete choice models for contingent valuation. J. Environ. Econ. Manag. 18, 19–34.
+Misra, S.K., Huang, C.L., Ott, S.L., 1991. Consumer willingness to pay for pesticide-free fresh produce. West. J. Agric. Econ. 16 (2), 218–227.
+Moeltner, K., Woodward, R., 2009. Meta-functional benefit transfer for wetland valuation: making the most of small samples. Environ. Resour. Econ. 42,
+89–108.
+Phaneuf, D.J., 1999. A dual approach to modeling corner solutions in recreation demand. J. Environ. Econ. Manag. 37, 85–105.
+Smith, V.K., 1992. Comment: Arbitrary values, good causes and premature verdicts. J. Environ. Econ. Manag. 22 (1), 71–89.
+Stevens, T.H., DeCoteau, N.E., Willis, C.E., 1997. Sensitivity of contingent valuation to alternative payment schedules. Land Econ. 73 (1), 140–148.
+Stumborg, B.E., Baerenklau, K.A., Bishop, R.C., 2001. Nonpoint source pollution and present values: a contingent valuation study of Lake Mendota. Rev. Agric.
+Econ. 23 (1), 120–132.
+Thaler, R.H., 1999. Mental accounting matters. J. Behav. Decis. Mak. 12, 183–206.
+Thompson, E., Berger, M., Blomquist, G., Allen, S., 2002. Valuing the arts: a contingent valuation approach. J. Cult. Econ. 26 (2), 87–113.
+Turnbull, B.W., 1976. The empirical distribution function with arbitrarily grouped, censored, and truncated data. J. R. Stat. Soc. 38 (B), 290–295.
+Warner, John T., Pleeter, Saul, 2001. The personal discount rate: evidence from military downsizing programs. Am. Econ. Rev. 91 (1), 33–53.
+Whitehead, J.C., Dumas, C.F., Herstine, J., Hill, J., Buerger, B., 2008. Valuing beach access and width with revealed and stated preference data. Mar. Resour.
+Econ. 23, 119–135.
+Wolff, H., 2014. Value of Time: Speeding behavior and gasoline prices. J. Environ. Econ. Manag 67, 71–88.
+
+

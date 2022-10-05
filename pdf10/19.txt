@@ -1,0 +1,2750 @@
+MANAGEMENT SCIENCE
+
+informs
+
+Vol. 56, No. 6, June 2010, pp. 905–923
+issn 0025-1909 ! eissn 1526-5501 ! 10 ! 5606 ! 0905
+
+®
+
+doi 10.1287/mnsc.1100.1157
+© 2010 INFORMS
+
+Impossible Frontiers
+Thomas J. Brennan
+
+School of Law, Northwestern University, Chicago, Illinois 60611, t-brennan@law.northwestern.edu
+
+Andrew W. Lo
+
+Sloan School of Management, Massachusetts Institute of Technology, Cambridge, Massachusetts 02142; and
+AlphaSimplex Group, Cambridge, Massachusetts 02142, alo@mit.edu
+
+A
+
+key result of the capital asset pricing model (CAPM) is that the market portfolio—the portfolio of all
+assets in which each asset’s weight is proportional to its total market capitalization—lies on the meanvariance-efficient frontier, the set of portfolios having mean-variance characteristics that cannot be improved
+upon. Therefore, the CAPM cannot be consistent with efficient frontiers for which every frontier portfolio has
+at least one negative weight or short position. We call such efficient frontiers “impossible,” and show that
+impossible frontiers are difficult to avoid. In particular, as the number of assets, n, grows, we prove that the
+probability that a generically chosen frontier is impossible tends to one at a geometric rate. In fact, for one
+natural class of distributions, nearly one-eighth of all assets on a frontier is expected to have negative weights for
+every portfolio on the frontier. We also show that the expected minimum amount of short selling across frontier
+portfolios grows linearly with n, and even when short sales are constrained to some finite level, an impossible
+frontier remains impossible. Using daily and monthly U.S. stock returns, we document the impossibility of
+efficient frontiers in the data.
+Key words: short selling; long/short; portfolio optimization; mean-variance analysis; CAPM
+History: Received September 2, 2009; accepted January 13, 2010, by Wei Xiong, finance. Published online in
+Articles in Advance April 9, 2010.
+
+1.
+
+Introduction
+
+assets increases without bound. This result depends,
+of course, on the specific distribution from which
+we draw the covariance matrix; we consider two
+classes: the uniform distribution (Haar measure), and
+distributions centered around linear factor models
+such as the CAPM and Ross’s (1976) arbitrage pricing theory (APT). For both classes of distributions,
+mean-variance-efficient frontiers are almost surely
+impossible.
+This remarkable result is not an artifact of pathological parameters, except in the two-asset case, but is
+a generic property of mean-variance-efficient portfolios. For typical parameter values, every portfolio on
+the efficient frontier will contain at least one short
+position, i.e., a negative weight. This implies that
+such an efficient frontier cannot be consistent with a
+CAPM equilibrium in which every investor holds the
+tangency portfolio, for such an equilibrium requires
+all weights to be positive for that portfolio. Alternatively, our impossibility result implies that the set
+of expected-return vectors and covariance matrices,
+!!" "#, that are consistent with a CAPM equilibrium is
+extremely small—in fact, measure zero in the limit—
+hence we should not expect typical empirical estimates of !!" "# to yield plausible portfolios from the
+CAPM perspective unless the CAPM is literally true
+and estimation error is negligible.
+
+A cornerstone of modern portfolio management is the
+“efficient frontier” of mean-variance analysis: the set
+of portfolios for which the lowest variance possible is
+attained for a given level of expected return, or the
+highest possible expected return is attained for a given
+level of variance. The main thrust of the capital asset
+pricing model (CAPM) is that the market portfolio—
+the portfolio of all assets in which each asset’s weight
+is proportional to its total market capitalization—must
+lie somewhere on the efficient frontier. Because, by
+definition, every component of the market portfolio
+has a nonnegative weight (since its market capitalization must be nonnegative), we would expect at least
+one portfolio on the efficient frontier to have this property. If, for a given a set of asset-return parameters
+(means, variances, and covariances), the corresponding efficient frontier does not have any such portfolio, we call this an “impossible frontier” for obvious
+reasons.
+In this paper, we show that as the number of
+assets grows large, nearly all efficient frontiers are
+impossible.
+Specifically, for any arbitrary set of expected returns
+and for a randomly chosen covariance matrix, we
+show that the probability that the resulting frontier is impossible approaches one as the number of
+905
+
+Brennan and Lo: Impossible Frontiers
+
+906
+
+Management Science 56(6), pp. 905–923, © 2010 INFORMS
+
+Our results provide one explanation for the skepticism that most long-only portfolio managers have
+for standard mean-variance optimization. From their
+perspective, an impossible frontier is truly impossible
+for them to implement. Moreover, it is well known
+that the output of standard portfolio optimizer yields
+weights that must be constrained, but until now,
+the nonnegativity restriction that has become second
+nature to practitioners was thought to be a consequence of estimation error. The results in our paper
+show that even in the ideal case in which the means
+and covariance matrix of asset returns are known
+with perfect certainty, the efficient frontier will almost
+always contain negative weights. To the extent that
+estimation error generates means and covariances that
+deviate from the CAPM, such sampling variation will
+only exacerbate the problem, making it more likely
+that the sample efficient frontier is impossible. Our
+impossibility results may also provide a partial explanation for the recent popularity of so-called “active
+extension” strategies such as “130/30” portfolios in
+which a limited amount of short selling is permitted.
+We begin in §2 with a brief review of the literature, and in §3 we derive analytical results for the
+two- and three-asset cases to build intuition and motivate our more general results. The main results of
+this paper are contained in §4, where we propose
+two classes of probability measures over the space of
+all possible covariance matrices and show that under
+both of these classes of measures, impossible frontiers
+become the rule, not the exception, as the number of
+assets increases without bound. We also show that
+the expected minimum amount of short selling across
+frontier portfolios grows linearly with n, and even
+when short sales are constrained to some finite level,
+an impossible frontier remains impossible. Given the
+importance of the CAPM, in §5 we examine the linear one-factor return-generating model in more detail,
+and show how to construct a covariance matrix that
+does not yield an impossible tangency portfolio. In §6,
+we provide an empirical illustration of our theoretical
+findings using daily and monthly returns for a subset
+of S&P 500 stocks, and show that the usual sample
+estimators of !!" "# do yield impossible frontiers. We
+conclude in §7 with a discussion of the theoretical and
+practical significance of our results.
+
+2.
+
+Literature Review
+
+Any review of the mean-variance portfolio selection
+literature must begin with Markowitz (1952), who
+first introduced this powerful framework to the economics literature. Building on the Markowitz meanvariance framework, Tobin (1958), Sharpe (1964), and
+Lintner (1965) derived the equilibrium implications
+under the assumption that all investors held meanvariance-optimal or “efficient” portfolios, culminating
+
+in the “capital market line,” the line connecting the
+risk-free rate on the expected-return axis with the
+tangency portfolio on the efficient frontier in mean–
+standard deviation space.
+The role of short sales in mean-variance analysis
+has also been considered by several authors. In fact,
+Markowitz (1959, p. 132) recognized the importance of
+implementing constraints on portfolio weights, one of
+which was a nonnegativity or short-sales constraint.
+However, Lintner (1965) was perhaps the first to study
+the impact of short sales on capital market equilibrium, deriving alternative equilibria under shortsales prohibitions as well as short-sales constraints.
+Lintner concluded that investors would not engage
+in short sales in equilibrium because of the Tobin
+separation theorem, i.e., all investors are indifferent
+between holding portfolios of all assets and portfolios
+of just two funds: the riskless asset and the tangency
+portfolio.
+The importance of the mean-variance efficiency of
+the market portfolio was recognized early on by
+many authors, who initiated a series of debates on
+the testable implications of the CAPM. In particular, Roll (1977), Rudd (1977), Roll and Ross (1977),
+Green (1986), Green and Hollifield (1992), and Best
+and Grauer (1985, 1992) all acknowledged the potential incompatibility of an arbitrary set of means and
+covariances with positive weights for frontier portfolios. Roll (1977) and Roll and Ross (1977) present
+qualitative arguments for frontier portfolios to have
+positive weights, and Rudd (1977) corrects and quantifies some of those arguments. Using the dual of
+the standard mean-variance quadratic optimization
+problem, Green (1986) derives a fascinating necessary and sufficient condition for the efficient frontier to be impossible—the existence of a nontrivial
+zero-expected-return arbitrage portfolio (a portfolio
+with weights that sum to zero) that has nonzero correlation with all assets. Green and Hollifield (1992)
+derive conditions under which frontier portfolios will
+be well diversified, meaning they contain no extreme
+weights, and argue that extreme weights are likely
+in the presence of a single dominant factor in asset
+returns. Jagannathan and Ma (2003) show that, despite
+this fact, portfolios with nonnegativity constraints
+often perform better than unconstrained counterparts
+because the constraints reduce the impact of estimation error. And given a positive vector of market
+weights and a covariance matrix, Best and Grauer
+(1985) derive the restrictions on the vector of expected
+returns that imply that the given vector of market
+weights is an efficient portfolio.
+But the most relevant paper for our purposes is Best
+and Grauer (1992). In addition to providing conditions
+for all frontier portfolios to have positive weights,
+they derive a beautiful result: if a frontier contains
+
+Brennan and Lo: Impossible Frontiers
+
+907
+
+Management Science 56(6), pp. 905–923, © 2010 INFORMS
+
+portfolios with positive weights, they all lie on a continuous segment of the frontier! Using this fact, they
+show that as the number of assets increases without bound, and assuming that the CAPM holds (so
+that the vector of expected returns and the covariance
+matrix is consistent with the mean-variance efficiency
+of the vector of market weights), the line segment
+of frontier portfolios with positive weights converges
+to a single point under certain conditions. Given
+the implausibility of these conditions, and the sensitivity of frontier portfolios to small perturbations
+in the vector of expected returns (documented in
+Best and Grauer 1991a, b), they argue that frontiers
+with all positive weights are highly unlikely in practice. Our results confirm this intuition, but without
+any restrictions whatsoever on the vector of expected
+returns.
+More recently, Markowitz (2005, p. 17) argued that
+empirical deviations from the CAPM are not surprising in light of the counterfactual assumptions on
+which the CAPM is based. In particular, he observes
+that “[w]hen one clearly unrealistic assumption of the
+capital asset pricing model is replaced by a real-world
+version, some of the dramatic CAPM conclusions no
+longer follow.” An example is the fact that unlimited
+borrowing and lending at identical yields is not possible in practice, and this limitation implies that the
+market portfolio need not be mean-variance efficient
+in equilibrium.
+Markowitz’s (2005) caveats are well taken, but the
+results of our paper are considerably stronger—we
+show that even if all the assumptions of the CAPM
+are true, the market portfolio need not be meanvariance efficient. Specifically, Markowitz (2005) states
+the following assumptions:
+(A1) Transaction costs and other illiquidities can be
+ignored.
+(A2) All investors hold mean-variance-efficient
+portfolios.
+(A3) All investors hold the same (correct) beliefs
+about means, variances, and covariances of securities.
+(A4) Every investor can lend all she or he has or
+can borrow all she or he wants at the risk-free rate.
+Markowitz (2005) then concludes that:
+(C1) The market portfolio is a mean-varianceefficient portfolio.
+The results of §§3–5 show that there exist certain
+combinations of means, variances, and covariances for
+which every mean-variance-efficient portfolio contains
+short positions, implying that none can be the market
+portfolio. And as the number of assets grows without bound, the likelihood of coming across a set of
+parameter values with this characteristic approaches
+certainty.
+
+3.
+
+Some Examples of Impossible
+Frontiers
+
+We begin with some notation. Let ! be the vector of
+expected returns for n assets, and let " be the covariance matrix of those returns.1 For a given level of
+expected return, $o , the corresponding portfolio on
+the efficient frontier is the vector #, which minimizes
+the value of
+#" "#
+
+subject to #" $ = 1"
+
+# " ! = $o "
+
+(1)
+
+where $ is a column vector of ones of the appropriate length. The set of optimal # can be found using
+the method of Lagrange multipliers (see, for example,
+Merton 1972):
+"
+#
+!
+B
+BC
+−
+$
+!#$ − #g # + #g
+! = #% # =
+o
+D
+C
+$
+B
+for $o ≥
+" (2)
+C
+
+where
+
+and
+
+A ≡ !" "−1 !" B ≡ !" "−1 $"
+C ≡ $" "−1 $" D ≡ AC − B 2 "
+
+(3)
+
+#g ≡ "−1 $/C"
+
+(4)
+
+#$ ≡ "−1 !/B&
+
+Note that #g is the global minimum-variance portfolio, and #$ is the vector that maximizes the Sharpe
+ratio relative to the risk-free
+√ rate of zero, i.e., #$ maximizes the function !" #/ #" "#.
+The frontier starts at the expected return level
+$o = B/C. In fact, we can compute minimum-variance
+portfolios for values of $o less than B/C, but these
+portfolios would lie on the “inefficient” branch of
+the portfolio frontier, i.e., the portion of the frontier
+for which the expected return is not maximized for a
+given level of risk.
+We call a frontier “impossible” with respect to the
+ith component if the weight of the ith component at
+each point on the frontier is negative. Clearly, a sufficient condition for a frontier to be impossible is that
+it be impossible for the ith asset, 1 ≤ i ≤ n. From (2),
+we see that every point on an efficient frontier can be
+written in the form
+"
+#
+B
+C
+(5)
+$o −
+#P + #g "
+#=
+D
+C
+where #P ≡ B#$ − B#g . The values of C and D are
+nonnegative by the Cauchy-Schwartz inequality, so
+
+1
+
+Throughout this paper, we maintain the following notational conventions: (1) all vectors are column vectors unless otherwise indicated; (2) matrix transposes are indicated by primes, hence #" is
+the transpose of #; and (3) vectors and matrices are always typeset
+in boldface, i.e., X and $ are scalars and X and ! are vectors or
+matrices.
+
+Brennan and Lo: Impossible Frontiers
+
+908
+
+Management Science 56(6), pp. 905–923, © 2010 INFORMS
+
+a frontier will be impossible with respect to the ith
+asset exactly when #g and #P both have negative ith
+components.
+Our technique for proving that an efficient frontier
+is impossible is to show that the ith elements of both
+#g and #P are negative for some i. Using this method,
+we can calculate a lower bound for the probability
+that a generically chosen efficient frontier is impossible, as well as lower bounds for the expected number of negative weights of portfolios on an impossible
+frontier and lower bounds on the expected amount of
+total short sales at each point on the frontier.
+In §3.1, we investigate the special case of n = 2
+and find that certain frontiers are impossible, but only
+under some rather unnatural conditions. However, in
+§3.2, we show that when n = 3, a variety of frontiers
+become impossible without any unnatural conditions.
+3.1. The Two-Asset Case
+For the case of n = 2 assets, we can characterize all situations in which a frontier will be impossible (proofs
+are included in the appendix).
+Proposition 1. For n = 2, let the assets be ordered so
+that $1 < $2 , let 'i denote the risk of the ith asset, and
+let ( denote the correlation between the assets. The efficient
+frontier is impossible if and only if
+'2
+< (&
+'1
+Because ( ≤ 1, the proposition implies that a necessary condition for a frontier with two assets to be
+impossible is that '2 < '1 . Also, because the volatilities are both nonnegative, it is also necessary that
+( > 0. Thus, for a frontier to be impossible, the asset
+with higher expected return must also have lower
+risk, and the two assets must be positively correlated.
+In such a circumstance, it will be optimal to have
+a short position in the low-return/high-risk asset at
+every point on the efficient frontier.
+This condition is unnatural because the lower
+expected-return asset is strictly dominated by the
+higher expected-return asset, given that the latter is
+less risky than the former. Therefore, on purely economic grounds, it is possible to rule out impossible
+frontiers in the two-asset case. In the next section,
+however, we show that with just one more asset, there
+is no natural way to avoid impossible frontiers.
+3.2. The Three-Asset Case
+For n = 3 assets, we describe a class of mean returns,
+variances, and covariances indexed by a parameter
+) > 0 such that for sufficiently small values of ),
+the efficient frontier corresponding to the specified
+parameters is impossible, and that the short-sale
+amount throughout the frontier becomes arbitrarily
+
+large as ) approaches 0. Unlike the case of the condition in Proposition 1, no dominance relation among
+the assets is necessary; in fact, all three assets have
+the same ratio of expected return to standard deviation. After deriving the formal results for this class of
+parameters, we provide a specific numerical example
+and also indicate the range of values of ) for which
+frontiers in this class are impossible.
+For each 0 < ) < 1, let d = 1 − ), and define the
+following set of asset-return parameters:
+
+
+
+
+d
+d
+
+
+
+
+
+
+
+! = $2 
+ 1  " % = '2  1  " and
+1/d
+1/d
+(6)
+
+
+4
+1 d d
+
+
+
+"=
+ d 1 d "
+d4 d 1
+
+where ! is the vector of expected returns, % is the
+vector of standard deviations, and " is the correlation matrix. We assume that $2 > 0 and '2 > 0. The
+ratio of expected return to standard deviation for each
+asset is thus $2 /'2 . Also, the correlation between the
+first and the second asset is positive and identical
+to that between the second and third asset, whereas
+the correlation between the first and third asset is
+positive but somewhat smaller because d 4 < d. We
+prove below that the efficient frontiers corresponding
+to the class of parameters described by (6) are impossible for sufficiently small values of ). Before deriving this result, however, we must confirm that the
+correlation matrix specified in (6) is positive definite,
+which is accomplished by the following lemma (see
+the appendix for the proof):
+Lemma 1. The correlation matrix " specified in (6) is
+positive definite for all 0 < ) < 1.
+With this lemma in hand, we now prove that frontiers described in (6) are impossible when ) is sufficiently small.
+Proposition 2. For sufficiently small values of ), the
+frontier corresponding to the parameters described in (6) is
+impossible. Each frontier portfolio can be expressed as
+# = *#
+( P + #g "
+for * ≥ 0, where #
+( P = !12/B##P . There are values
+0 < *1 < *2 such that the weight of the second asset is negative for each portfolio in the range 0 ≤ * ≤ *2 and the
+first asset is negative for each portfolio in the range * > *1 .
+Therefore, there is always at least one asset with a negative weight, and for values of * between *1 and *2 , two
+assets have negative weights. Moreover, each portfolio on
+the frontier has a negative weight that is at least as large
+as 1/!3)# + O!1#.
+
+Brennan and Lo: Impossible Frontiers
+
+909
+
+Management Science 56(6), pp. 905–923, © 2010 INFORMS
+
+This proposition demonstrates that impossible
+frontiers can arise easily in the three-asset case,
+and without imposing any unnatural conditions on
+the asset-return parameters. In practice, numerical
+computations show that frontiers corresponding to
+the parameters in (6) become impossible whenever
+) ≤ 0&317.
+For concreteness, consider a numerical example
+with the following parameter values: ) = 0&2,
+$2 = 12%, and '2 = 20%. In this case, we have
+
+
+
+
+0&096
+0&160
+
+
+
+
+
+
+
+!=
+0&120 " % = 0&200 " and
+0&150
+0&250
+
+
+1&0000 0&8000 0&4096
+
+
+
+"=
+ 0&8000 1&0000 0&8000 &
+0&4096 0&8000 1&0000
+
+The parametrization of the frontier described in
+Proposition 2 takes the form
+
+ 
+
+−2&6021
+1&3553
+
+ 
+
+ 
+
+# = *
+ 0&5204  +  −0&9104 &
+2&0817
+0&5551
+
+The value of * for which the first coordinate of # is
+zero is *1 = 0&5208, and the value of * for which the
+second coordinate of # is zero is *2 = 1&7493. For values of * between 0 and *1 , the weight of the second
+asset is negative, and the weights of the other two
+assets are positive. For values of * between *1 and *2 ,
+the weights of both the first and second assets are
+negative, and the weight of the third asset is positive.
+Finally, for values of * greater than *2 , the weight of
+the first asset is negative, and the weights of the other
+two assets are positive. Therefore, the efficient frontier
+is impossible. Moreover, each portfolio on the frontier
+has a total short-sale amount of at least −63&9% of the
+total asset value.
+The circumstances in which impossible frontiers can
+arise in the case of three assets is not limited to just
+those parameters described by (6). In fact, the efficient frontier will continue to be impossible if the
+values of the risk, return, and covariance parameters
+are allowed to vary within a small neighborhood of
+(6). In addition, many other three-asset examples of
+impossible frontiers with empirically plausible parameters can be constructed. By increasing the number of
+assets from two to three, the set of impossible frontiers
+has grown significantly. In §4, we show that this is no
+coincidence, and that as n increases without bound, an
+arbitrarily chosen frontier is almost surely impossible.
+
+4.
+
+The General Case
+
+In this section, we consider the general case of an arbitrary number of n assets. Unfortunately, simple analytical results like those for the two- and three-asset
+cases of §3 are not available for an arbitrary number
+of assets (but see Green 1986; Best and Grauer 1985,
+1992 for other useful characterizations of impossibility, including computationally explicit methods for
+identifying impossible frontiers). Instead, we propose
+to conduct the following thought experiment: for a
+given vector ! of expected returns and a randomly
+selected covariance matrix ", what is the likelihood
+that the resulting frontier is impossible? To compute
+such a probability, we must, of course, propose a probability distribution for a covariance matrix, which is
+not a straightforward exercise. Although distributions
+of covariance matrices have been developed in the
+statistics literature, e.g., the Wishart distribution, they
+are sampling distributions of covariance-matrix estimators applied to independently and identically distributed multivariate normal data (see Anderson 1984,
+Chap. 7). Such distributions are highly parametric—
+if multivariate normality does not hold, then neither
+does the Wishart—and also do not necessarily capture
+the randomness that we seek, i.e., the random drawing of an arbitrary population covariance matrix from
+the space of all possible covariance matrices. In particular, Wishart distributions are typically “centered”
+at the estimated sample covariance matrix with multivariate tails that decline exponentially fast. This may
+be a reasonable model of the randomness associated
+with sampling variation, but seems less compelling
+as a mechanism for drawing an arbitrary covariance
+matrix at random.
+Instead, we seek a more general distribution, such
+as a uniform distribution over the space of all possible covariance matrices, i.e., the space of all !n × n#
+symmetric positive-definite matrices with real elements. However, because this space is not compact,
+a uniform distribution over this space will have infinite mass. Nevertheless, in the same way that an
+“improper prior” can be specified in Bayesian inference (see, e.g., Jeffreys 1961, pp. 180–181; Box and
+Tiao 1973, p. 426), we can construct an “uninformative” distribution as a proxy for the uniform. We provide such a distribution for covariance matrices in
+§4.1, which will allow us to gauge the probability that
+a randomly selected covariance matrix gives rise to
+an impossible frontier, yielding the conclusion that
+impossible frontiers are almost certain to arise as the
+number of assets increases without bound.
+However, it may be argued that an uninformative distribution of covariance matrices will not yield
+economically relevant draws because the resulting
+covariance matrices lack the factor structure hypothesized in the most popular asset-pricing models. We
+
+Brennan and Lo: Impossible Frontiers
+
+910
+
+Management Science 56(6), pp. 905–923, © 2010 INFORMS
+
+address this concern in §4.2 by introducing another
+class of probability distributions centered around the
+covariance matrices generated by linear factor-pricing
+models such as the CAPM and APT, and derive lower
+bounds on the probability that a frontier is impossible
+if it is chosen randomly with respect to one of the distributions in this class. We show that this lower bound
+also approaches unity as n grows without bound.
+In §4.3, we calculate lower bounds on the expected
+number of assets with respect to which a frontier will
+be impossible, as well as estimates for the expected
+minimum size of short positions across frontier portfolios. We also find that an impossible frontier will
+remain impossible even if constraints are placed on
+the total amount of short selling allowed in any
+portfolio.
+4.1. Impossibility with a Uniform Prior
+Without any prior information for what a covariance matrix “should” look like, a plausible starting
+point for generating a “randomly selected” covariance matrix is to apply a uniform distribution over
+the space of all real symmetric positive definite (n × n)
+matrices. This problem is closely related to the invariance principle in Bayesian statistical decision theory,
+which states that “if two decision problems have the
+same formal structure & & & , then the same decision rule
+should be used in each problem” (Berger 1985, p. 390).
+This principle depends critically on the absence of
+prior information which, in turn, requires that the
+prior distribution also be uninformative and “invariant,” i.e., scale independent. To formalize this notion
+of invariance, Berger (1985, Chap. 6.6, Definition 2)
+defines a group structure on the set of transformations of the data, and then defines a parametric family of probability measures to be invariant under this
+group if the parameters are invariant across all actions
+of the group. For example, under the group of scale
+transformations
+Y = gc !X# ≡ cX"
+
+(7)
+
+the exponential density function
+f !x ! +# = + −1 exp!−x/+#
+is invariant because the density of Y is given by (see
+Berger 1985, p. 394)
+−1
+
+c f !y/c ! +# = !c+#
+
+−1
+
+exp!−y/!c+## = f !y ! c+#&
+
+(8)
+
+Of course, the principle of invariance is considerably
+more general, and can be applied to arbitrary groups
+defined on arbitrary collections of random variables.
+Berger (1985, Chap. 6.6) shows that the prior distribution function associated with invariant decision rules
+is given by Haar measure, an extension of the uniform distribution to more general settings. We apply
+
+this same approach to define an uninformative prior
+on the space of all !n × n# covariance matrices, which
+we denote by #n .
+For #n , the natural group of transformations to consider is the general linear group GLn , the group of
+all invertible linear transformations on Rn (or, equivalently, the group defined by all invertible !n × n#
+matrices). This is the multivariate analog of the multiplicative scale transformation (7), where we wish to
+define invariance with respect to the matrix multiplication of a vector of n random asset returns r by
+an arbitrary invertible matrix A, yielding Ar. If the
+covariance matrix of r is ", then the covariance matrix
+of Ar is A"A" ; hence, we seek to construct an uninformative prior on #n that is invariant between " and
+A"A" for all invertible A. It turns out that Haar measure is the only measure satisfying this property.
+More formally, Haar measure is the unique measure (up to a constant) that is invariant under the
+natural action of the group GLn of invertible linear
+transformations on Rn on the space of covariance
+matrices. For G ∈ GLn , this action is defined by " +→
+G"G" for " ∈ #n , and any covariance matrix " can be
+mapped to any other covariance matrix under some
+such action. Thus, any such action takes a neighborhood around a specified covariance matrix to a corresponding neighborhood around any other covariance
+matrix, and Haar measure assigns the same volume
+to every such image of the original neighborhood. In
+this sense, Haar measure behaves uniformly on all of
+#n and represents an uninformative prior distribution
+over all possible !n × n# covariance matrices. The following definition summarizes Haar measure on GLn
+(see Jorgenson and Lang 2005 for further discussion).
+Definition 1. Haar measure on #n is the measure,
+,n , that is invariant under transformations of the form
+" +→ G"G" , for G ∈ GLn . Thus, for any region S ⊆ #n ,
+Haar measure has the property that
+,n !S# = ,n !GSG" #
+
+(9)
+
+for all G ∈ GLn . This measure is unique up to multiplication by a positive constant, and in terms of the
+elements of the matrix " = -.i" j /, we have
+d,n !"# =
+
++
+1
+d.i" j "
+!n+1#/2
+!det!"##
+i≤j
+
+(10)
+
+where d.i" j is the element of Euclidean measure.
+Under Haar measure, the entire space #n has infinite volume so we cannot scale by a constant to transform Haar measure into a proper probability density.
+Instead, we calculate the probability that a selected
+frontier is impossible on cross sections of #n using
+the probability density induced by Haar measure on
+those cross sections. We first need to introduce a useful system of coordinates on #n with respect to which
+we can easily define our cross sections.
+
+Brennan and Lo: Impossible Frontiers
+
+911
+
+Management Science 56(6), pp. 905–923, © 2010 INFORMS
+
+Definition 2. Each matrix M ∈ #n can be uniquely
+expressed in terms of (partial) Iwasawa coordinates as
+!X" W" V#, where W ∈ #2 , V ∈ #n−2 , and X ≡ -x1 " x2 /,
+with x1 " x2 ∈ Rn−2 . The relationship between M and
+!X" W" V# is defined by the formula
+-,
+-,
+,
+W 0
+I2
+0
+I2 X"
+M=
+0 In−2
+0 V
+X In−2
+,
+W + X" VX X" V
+=
+&
+(11)
+VX
+V
+Moreover, each matrix W can be uniquely expressed
+in terms of Iwasawa coordinates as !y" u" v#, where
+u" v ∈ R+ and y ∈ R, according to the relationship
+,
+-,
+-,
+1 y
+u 0
+1 0
+W=
+0 1
+0 v
+y 1
+,
+u + y 2 v yv
+=
+&
+(12)
+yv
+v
+Finally, we can also express each matrix X in terms of
+polar coordinates !r1 " & & & " rn−2 " +1 " & & & " +n−2 #, where ri ∈
+R+ and +i ∈ S 1 = -0" 20/, using the relationships x1" i =
+ri cos +i and x2" i = ri sin +i . Therefore, each M ∈ #n can
+be written in terms of coordinates
+M = !r1 " & & & " rn−2 " +1 " & & & " +n−2 " y" u" v" V#
+
+(13)
+
+so that the space #n can be viewed as the product
+#n = !R+ #n−2 × !S 1 #n−2 × R × R+ × R+ × #n−2 &
+
+(14)
+
+Using the coordinate system of Definition 2, we
+consider cross sections of #n that have fixed values for all coordinates except the +i . We write Z =
+Z!r1 " & & & " rn−2 " y" u" v" V# for such a cross section with
+specified fixed values of the coordinates r1 " & & & " rn−2 ,
+y, u, v, and V. This cross section is thus a product
+of !n − 2# copies of S 1 , and the measure on this cross
+section induced by Haar measure on #n is
+d,Z =
+
+1
+d+ · · · d+n−2 &
+!20#n−2 1
+
+(15)
+
+The measure ,Z is therefore a proper probability distribution on the cross-sectional space Z; although
+probabilities cannot be computed with respect to Haar
+measure on all of #n , they can be computed with
+respect to ,Z on each cross section Z of #n .
+To calculate the probability that a covariance
+matrix " gives rise to an impossible frontier, it is convenient first to change variables from " to M using
+the correspondence
+" = AMA" "
+
+(16)
+
+where A = A!c1 " & & & " cn # is the unique matrix in GLn
+with columns defined by
+Ae1 = c1 $"
+
+Aej = cj ej
+
+Ae2 = c2 !"
+
+and
+
+for 3 ≤ j ≤ n
+
+(17)
+
+for specified values of ci > 0, where ej is an !n × 1#vector with 0s in all entries except for a 1 in the jth
+entry, j = 1" & & & " n. Haar measure is invariant under
+this change of variables, so we can replace " with
+M and use Haar measure on M as the basis for our
+probability calculations. We calculate the probability
+that a matrix " = AMA" gives rise to an impossible
+frontier for a matrix M in a cross section Z, where the
+probability is calculated with respect to the distribution ,Z . In Theorem 1, we obtain a lower bound for
+this probability of impossibility that depends only on
+the parameter y in the specification of Z. However,
+first we need a lemma that provides a useful test for
+impossibility.
+Lemma 2. For a frontier to be impossible with respect
+to the ith coordinate, it is necessary and sufficient that
+" " −1 #
+!" $
+" −1
+" −1
+ei " $ < 0 and ei " !− " −1 e"i "−1 $ < 0& (18)
+$" $
+"
+If " = AMA and i > 2, the conditions in (18) are equivalent to
+cos +i−2 > y sin +i−2
+
+and
+
+sin +i−2 > 0"
+
+(19)
+
+where M has coordinates as in Definition 2.
+Theorem 1. Let M ∈ Z = Z!r1 " & & & " rn−2 " y" u" v" V#
+be chosen randomly with respect to the distribution ,Z . The
+probability pZ that the covariance matrix " = AMA" gives
+rise to an impossible frontier is bounded below as
+"
+#n−2
+1
+−1
+pZ ≥ 1 − 1 −
+cot y
+20
+"
+#n−2
+1
+≥ 1− 1−
+&
+(20)
+20!1 + max!0" y##
+This theorem shows that for any fixed value of y,
+the probability that a covariance matrix in a cross section Z gives rise to an impossible frontier tends to 1
+geometrically as n grows.2 Moreover, if y is bounded
+2
+
+The intuition for this result is similar to the intuition for the fact
+that the fraction of an n-dimensional unit sphere not lying in the
+positive orthant tends to 1 geometrically with n. The sphere is
+defined by n Euclidean variables subject to the condition that their
+squares sum to 1. Under the uniform Haar measure on the sphere,
+each of these n variables is independent of all of the others, and
+each is equally likely to be positive or negative. Thus, the likelihood
+that at least one is negative, so that a point is not in the positive
+orthant, is 1 − 2−n . For the case of the probability distribution in
+Theorem 1, each of the !n − 2# variables +i is independent of all the
+others, and there is a likelihood py , dependent only on y, that the
+ith of these variables gives rise to a frontier that is impossible with
+respect to the !i + 2#th coordinate. As a result, the probability that
+the frontier is impossible with respect to at least one coordinate is
+at least as great as 1 − !1 − py #n−2 .
+
+Brennan and Lo: Impossible Frontiers
+
+912
+
+Management Science 56(6), pp. 905–923, © 2010 INFORMS
+
+above by y+ , the probability for any cross section
+Z with such a y coordinate tends to 1 at least as
+quickly as
+"
+#n−2
+1
+pZ ≥ 1 − 1 −
+&
+20!1 + max!0" y+ ##
+The following corollary extends the previous results
+to yield a lower bound on the probability of impossibility for probability densities on the entire space #n .
+
+Corollary 1. Let 1 be any probability density on #n
+that factors into a product of densities
+"n−2 # "n−2 #
++
++
+1ri ×
+1+i × 1y × 1u × 1v × 1V " (21)
+1=
+i=1
+
+i=1
+
+where the 1+i are uniform probability densities on S 1 , and the
+other distributions are aribtrary distributions on the respective spaces ri ∈ R+ , y ∈ R, u ∈ R+ , v ∈ R+ , and V ∈ #n−2 .
+Let " = AMA" be an arbitrary covariance matrix, with A as
+defined in (17), and with M chosen randomly in accordance
+with the distribution 1. The probability p that " gives rise
+to a frontier that is impossible is bounded below by
+#n−2
+. "
+1
+p≥1−
+1−
+1y !y#&
+(22)
+20!1 + max!0" y##
+R
+
+4.2. Impossibility with Linear-Factor Model Priors
+Although the generality of Haar measure in representing the selection of an arbitrary covariance matrix is
+compelling, some may consider it too general because
+it does not differentiate among outcomes according to
+their economic plausibility. In particular, Haar measure places the same probabilistic weight on covariance matrices arising from quantum mechanics as it
+does on those from economic models—there is nothing intrinsic to Haar measure that incorporates economic structure. Accordingly, one could argue that
+Haar measure places too much weight on financially irrelevant covariance matrices. This argument is
+debatable, not in the least because we do not usually
+develop economic theories to yield specific implications for covariance matrices, and hence it is not clear
+what “financially relevant” covariance matrices look
+like.
+However, there does exist an important class of
+financial models that places restrictions on assetreturn covariance matrices, and that is the set of linear
+factor models such as the CAPM and APT. If a linear
+factor-pricing model holds, then a “typical” covariance matrix drawn randomly from this economy will
+have a different distribution than a Haar measure.
+Accordingly, financial economists may prefer a more
+informed prior when it comes to covariance matrices.
+In this section, we introduce a class of probability
+distributions based on covariance matrices motivated
+by linear factor models such as the CAPM and APT,
+
+and we calculate probabilities of impossibility with
+respect to distributions in this class. The construction
+of this class uses many of the techniques and notations developed in connection with our analysis of
+Haar measure in §4.1, so our exposition will be less
+detailed.
+We start with T0 = T0 !!" $m " 'm " rf #, the covariance
+matrix implied by a linear one-factor model for a chosen value of the excess expected-return vector ! and
+for arbitrarily specified values of the excess expected
+return on the market, $m , and the market volatility,
+'m . The excess expected return values are defined
+as the excess of the expected return values over the
+risk-free rate, rf . Also, we assume for the moment
+that there are no idiosyncratic components to asset
+returns. The matrix T0 can be written
+T0 = 'm2 &&" "
+where & is the vector of “beta” values, & = !/$m
+(recall that we have temporarily assumed no idiosyncratic shocks).
+To incorporate independent idiosyncratic risks,3
+nonnegative amounts can be added to diagonal elements of T0 , and the elements of the matrix may be
+additionally adjusted to reflect deviations from the
+CAPM. We define a family of such matrices,
+$ = $ !!" $m " 'm " rf #
+
+= 2T = 'm2 &&" + diag!'# + )$$" % ) ≥ 0" 3i ≥ 04"
+
+and we define the subfamily $2 to be those matrices in $ with 31 = 0, 32 = 0, and 3i > 0 for 3 ≤ i ≤ n.
+The notation diag!'# represents the diagonal matrix
+with diagonal elements equal to the elements of the
+vector '.
+For any T ∈ $2 , we can write T = AA" , where A =
+A!c1 " & & & " cn # is defined in (17), with c1 = )1/2 , c2 =
+1/2
+'m /$m , and ci = 3i for 3 ≤ i ≤ n. We write covariance matrices " in the form " = AMA" for some
+M ∈ #n , and we consider probability distributions on
+" defined in terms of probability distributions on M.
+Because every " corresponds to a unique M under
+this relationship, every probability distribution for "
+can be realized in this way. Also, when M = In , we
+3
+
+Of course, if the CAPM were literally true, then the vector of
+idiosyncratic risks ( would have to satisfy the linear restriction
+#"m ( ≡ 0, where #m is the vector of market weights (in other words,
+the random idiosyncratic shocks must sum to zero in each and
+every realization, implying that their n-dimensional joint distribution is, in fact, degenerate, and lies in an !n − 1#-dimensional
+subspace). However, we are not assuming that the CAPM is true;
+otherwise, by definition the efficient frontier cannot be impossible.
+Instead, we are using the CAPM’s one-factor model as motivation
+for constructing an alternative to Haar measure for the express
+purpose of generating a “randomly chosen” covariance matrix that
+may be more relevant for financial applications.
+
+Brennan and Lo: Impossible Frontiers
+
+913
+
+Management Science 56(6), pp. 905–923, © 2010 INFORMS
+
+have " = T, so distributions for " are “centered” on
+the CAPM-based matrix T to the same extent that
+distributions for M are centered on In . We can now
+define a broad class of probability distributions for "
+that are “centered” on CAPM-based matrices T ∈ $2 .
+Definition 3. For c > 0, a distribution 1 on " ∈ #n
+is in the class %!$2 5 c# if the corresponding distribution 1M on M ∈ #n can be factored into a product of
+distributions
+"n−2 # "n−2 #
++
++
+1=
+1ri ×
+1+i × 1y × 1u × 1v × 1V " (23)
+i=1
+
+i=1
+
+where the 1+i are uniform probability densities on
+2
+S 1 , where 1y is bounded above by c e−y for y ≥ 0,
+and where the other distributions are arbitrary distributions on the respective spaces ri ∈ R+ , u ∈ R+ , v ∈
+R+ , and V ∈ #n−2 . Here we use the notation of Definition 2 for the coordinates for M, and we use the correspondence " = AMA" for the relationship between "
+and M.
+We now turn to the central result of this section:
+a lower bound for the probability of impossibility
+that is uniform across all distributions in the class
+%!$2 5 c#.
+
+Theorem 2. For any given excess expected-return vector !, excess expected return on the market $m , market
+volatility 'm , and risk-free rate rf relative to which excess
+returns are defined, let 1 be a probability distribution in
+%!$2 5 c# = %!$2 !!" $m " 'm " rf #5 c# for a specified c > 0.
+With respect to this distribution, the probability that a random choice of " gives rise to an efficient frontier that is
+impossible is bounded below by
+" #n−2
+" "
+# #
+6
+n − 2 2/3
+PI ≥ 1 −
+− 4c exp −
+&
+(24)
+7
+30
+
+This lower bound holds uniformly across all 1 ∈ %!$2 5 c#,
+as well as across all choices of !, $m , 'm , and rf . As n
+increases without bound, the probability that a generically
+chosen frontier is impossible tends to unity.
+
+The remarkable generality of Theorem 2 raises
+the question of how tight the lower bound can be,
+especially given the fact that we have placed no
+restrictions on the excess expected-return vector !.
+Table 1 shows that even for the 50-asset case—a
+relatively small number of assets for most financial
+applications—the likelihood of an impossible frontier
+is nearly certain.
+It should come as no surprise that Theorem 2 can
+easily be extended to the case in which returns satisfy any linear k-factor model, k . n. In this case, the
+factor !n − 2# in (24) is replaced by !n − k − 2#, and
+some of the constants are slightly different, but the
+asymptotic implications of the bound are identical.
+As n increases without bound, the probability of an
+impossible frontier approaches unity.
+
+Table 1
+
+Lower Bound for Probability of Impossible
+Frontier with n Assets
+
+n
+
+Lower bound
+
+25
+50
+75
+100
+
+0!9059
+0!9787
+0!9920
+0!9966
+
+Note. This table shows the lower bound for the probability
+that a randomly chosen n-asset covariance matrix yields
+an impossible frontier under any measure " ∈ %#$2 $ 0!1%
+over the space of all #n × n% symmetric positive-definite
+covariance matrices with real elements.
+
+4.3. Characterizing the Short Positions
+In this section, we derive several additional results
+about impossible frontiers. We determine the expected
+number of the total number of assets n with respect to
+which a generic frontier will be impossible, and derive
+a lower bound for the expected sizes of short positions
+across a generic frontier. We also generalize Theorem 2
+to the case in which a constraint is placed on the total
+size of short positions at each point on the frontier.
+Theorem 3. For any given excess expected-return vector !, excess expected return on the market $m , market
+volatility 'm , and risk-free rate rf relative to which excess
+returns are defined, let 1 be an arbitrary probability distribution in %!$2 5 c# = %!$2 !!" $m " 'm " rf #5 c#. Under this
+probability distribution, the expected number of the total
+number of assets n with respect to which the frontier corresponding to a random choice of " is impossible is bounded
+below by
+En ≥ c " !n − 2#
+(25)
+for a positive constant c " defined as
+#
+. "
+1
+"
+c ≡
+1y !y#"
+R 20!1 + max!0" y##
+
+(26)
+
+which depends only on the factor 1y of the probability distribution 1. If 1y is a normal distribution with unit variance, a numerical lower bound for En is !n − 2#/8.
+
+This result follows from an estimate of the integral defining the expected value (see the appendix),
+and shows that the number of assets requiring short
+positions on a typical frontier grows linearly with the
+number of assets.
+We can also determine lower bounds for the aggregate size of the short positions among efficientfrontier portfolios. The following definition makes
+this notion precise:
+Definition 4. For 1 ≤ i ≤ n, let Si denote the infimum of the short position in the ith asset, measured
+as a fraction of the portfolio’s net asset value, where
+the infimum is taken over all points on a given efficient frontier. Let S denote the infimum of the aggregate amount of short selling, where the infimum is
+
+Brennan and Lo: Impossible Frontiers
+
+914
+
+Management Science 56(6), pp. 905–923, © 2010 INFORMS
+
+also taken over all portfolios on a given efficient
+frontier.
+With this definition, we are able to derive a lower
+bound on the magnitude of shorting among efficientfrontier portfolios:
+Theorem 4. For any given excess expected-return vector !, excess expected return on the market $m , market
+volatility 'm , and risk-free rate rf relative to which excess
+returns are defined, let 1 be an arbitrary probability distribution in %!$2 5 c# = %!$2 !!" $m " 'm " rf #5 c#. Under 1,
+for 3 ≤ i ≤ n, the expected value of Si satisfies
+E-Si / ≥ ci "
+where
+
+(27)
+
+"
+#". 0
+#
+1 . /
+ci ≡
+r 1
+!1 − y# 1y "
+20 0 i−2 ri−2
+−/
+
+(28)
+
+E-S/ ≥ c∗ !n − 2#&
+
+(29)
+
+Finally, we consider the effect of imposing shortsales constraints by first defining the concept of a constrained efficient frontier:
+Definition 5. For b ≥ 0, a constrained efficient
+frontier, !b , is the set of portfolio weight vectors that
+provide maximum returns for given levels of volatility, subject to the condition that the total size of the
+short positions in such weight vectors be no more
+than a fraction b of the portfolio’s net asset value.
+Such a constrained frontier is an impossible frontier
+if every point on !b has a negative weight for at least
+one asset.
+Remarkably, imposing short-sales constraints does
+not decrease the probability that a frontier is impossible, as the next result shows:
+Theorem 5. Let ! be an unconstrained efficient frontier, and let !b be the corresponding constrained efficient
+frontier for some b > 0. If ! is an impossible frontier, then
+!b is an impossible frontier as well.
+Therefore, the probability that a constrained efficient
+frontier, with b > 0, is impossible is at least as large as
+the probability that an unconstrained efficient frontier
+is impossible.
+
+The One-Factor Model
+
+where rm is the stochastic market return, & is an !n×1#
+constant vector, and ( is an !n × 1# stochastic vector
+of idiosyncratic shocks. We assume that the expected
+value of ( is zero, and we write ) for its covariance
+matrix.
+Let $m and 'm denote the expected return and standard deviation of rm , respectively. According to the
+CAPM relation (30), the mean vector and covariance
+matrix for asset returns, ! and ", respectively, can be
+written in terms of $m , 'm , &, rf , and ) as
+! = $rf + &!$m − rf #
+
+and 1ri−2 and 1y are as in Definition 3. Note that if all
+the functions 1ri−2 are identical, so that all the ci have a
+common value c∗ , then the expected value of S has the
+following lower bound:
+
+5.
+
+of n assets be given by the following linear one-factor
+model:
+(30)
+r = $rf + &!rm − rf # + ("
+
+Given the overwhelming importance of the CAPM to
+financial theory and practice, we consider the special
+case of the linear one-factor model that underlies the
+CAPM. In particular, let the !n × 1#-vector of returns
+
+and " = &&" 'm2 + )&
+
+(31)
+
+The tangency portfolio implied by the CAPM is
+#$ , defined in (4) as #$ ≡ "−1 !/B. And under the
+assumption that ) is diagonal and ! contains all
+positive elements, it can be shown that the tangency
+portfolio is, in fact, not impossible; i.e., it contains
+no negative weights and may, therefore, be consistent
+with capital market equilibrium in which the weights
+are proportional to the market capitalizations of the
+securities. In this section, we explore the impossibility
+of the tangency portfolio for more general residual
+covariance matrices ) and with no constraints on !,
+and find that, as before, impossibility is the rule, not
+the exception as n increases without bound.
+In §5.1, we introduce the techniques needed to characterize impossible tangency portfolios, and in §5.2,
+we derive a lower bound on the probability that a
+randomly selected tangency portfolio is impossible. In
+§5.3, we show how to construct the unique covariance
+matrix that is consistent with a given vector of means
+!, the risk-free rate rf , a set of market-capitalization
+weights #m , and the CAPM equilibrium (i.e., where
+those market weights correspond to those of the tangency portfolio), and which is as “close” as possible
+to a given covariance matrix ". In other words, we
+derive the covariance matrix that is as close as possible to ", but that is also consistent with the CAPM.
+5.1.
+
+Characterizing Impossible
+Tangency Portfolios
+As in §4, the key to characterizing impossible tangency portfolios is the choice of coordinates in which
+to express the covariance matrix, which will allow
+us to focus on the portion of the matrix that is relevant for impossibility. Any covariance matrix " can be
+written in the form " = AMA" , where M is a positivedefinite symmetric matrix, and where A is the unique
+matrix that takes e1 to ! and ei to ei for 2 ≤ i ≤ n.4
+4
+Note that the definitions of A and M are slightly different here
+than in §4.1, but we keep the same notation because these matrices
+play the same role as before.
+
+Brennan and Lo: Impossible Frontiers
+
+915
+
+Management Science 56(6), pp. 905–923, © 2010 INFORMS
+
+Also, using techniques similar to those in §4.1, M can
+be expressed in terms of partial Iwasawa coordinates
+as
+-0
+,
+- /,
+w 0
+1
+0
+M=
+0 V
+x In−1
+,
+"
+w + x Vx x" V
+=
+"
+(32)
+Vx
+V
+where w ∈ R+ , x ∈ Rn−1 , and V is a covariance matrix
+of dimension !n − 1# × !n − 1#. Here we have used the
+notation G-H/ for H" GH.
+In these coordinates, the portfolio #$ can be
+expressed simply as
+
+!1+$2 x1 +···+$n xn−1 #/d for i = 1"
+(33)
+#$"i =
+
+−$1 xi−1 /d
+for 2 ≤ i ≤ n&
+d ≡ 1+!$2 −$1 #x1 +···+!$n −$1 #xn−1 &
+
+Therefore, #$ is completely determined by x and !.
+This allows us to characterize the impossibility of the
+tangency portfolio via the following proposition:
+Proposition 3. The tangency portfolio, #$ , implied by
+the CAPM is impossible if and only if any one of the following three conditions holds: (i) two elements of x have
+different signs; (ii) all elements of x have the same sign as
+$1 /d; or (iii) the quantity !1 + $2 x1 + · · · + $n xn−1 #/d is
+negative, where d ≡ 1 + !$2 − $1 #x1 + · · · + !$n − $1 #xn−1 .
+We will make the most use out of the first condition
+for impossibility in Proposition 3 because it describes
+the bulk of the cases in which the tangency portfolio
+is impossible.
+5.2.
+
+The Probability of Impossible
+Tangency Portfolios
+To determine the probability that the CAPM tangency
+portfolio is impossible, we need to choose a probability distribution on the underlying variables &, $m ,
+'m , rf , and ). Once these variables are determined,
+! and " are determined as well, and Proposition 3
+will allow us to assess the impossibility of the corresponding tangency portfolio.
+For our probability distribution, we allow &, $m ,
+'m , and rf to be specified arbitrarily—our results
+will hold uniformly across any choice of these variables. With respect to ), we decompose the matrix
+into components and allow all but one of those
+components to be specified arbitrarily. Specifically,
+we write ) as
+- /,
+-0
+,
+611 0
+1 *"
+)=
+1
+0 In−1
+0 )
+,
+611
+611 * "
+=
+"
+(34)
+1 + 611 ** "
+611 * )
+
+1 is an !n − 1# × !n − 1# positivewhere * ∈ Rn−1 , )
+1 and
+definite matrix, and 611 > 0. The values of )
+611 can be specified arbitrarily. With respect to *, we
+impose a probability distribution 17 !*# on Rn−1 , and
+in our probability calculations we consider several
+possible choices of 17 . Thus, for our probability distribution on the underlying variables, we allow completely arbitrary specification of all terms except *,
+and with respect to * we focus on a number of different choices of probability distributions on Rn−1 .
+The characterization of impossibility in Proposition 3 relies on expressing " = AMA" in terms of coordinates x, w, and V for M. Our probability distribution, however, is expressed in terms of another set of
+1 'm , and &. Thus,
+coordinates for ", namely, *, 611 , ),
+we need to calculate the relationship between these
+choices of coordinates to apply the characterization of
+impossibility to draws from our distribution. The relationship of primary importance will be the expression
+of x in terms of the coordinates for the probability
+distribution, so we now turn to this calculation.
+Multiplying on the right by !A" #−1 and on the left
+by A−1 in the expression for " in (31), and using the
+definition of A, we see that
+,
+!611 /$1 #z"
+611 /$21
+"
+2
+M = e1 e1 !'m /$m # +
+1 + 611 zz"
+!611 /$1 #z )
+,
+611 /$21 + !'m /$m #2 !611 /$1 #z"
+=
+"
+(35)
+1 + 611 zz"
+!611 /$1 #z
+)
+where z = * − !
+( /$1 , with !
+( = !$2 " & & & " $n #" . In light of
+the expression for M in (32), we have
+1 + 611 zz" #−1 z&
+x = V−1 !Vx# = !611 /$1 #!)
+
+(36)
+
+Because ! = $rf + &!$m − rf # and z is determined
+by ! and *, we see that (36) expresses x in terms
+of the coordinates for our probability distribution, as
+desired. After some algebraic manipulation, we can
+also write this expression for x as
+"
+#
+611 /$1
+1 −1 z&
+x=
+(37)
+4
+42 )
+−1/2
+4
+4
+1
+1 + 611 )
+z
+
+This is a more useful formula for x because we are
+interested in the signs of the elements of x, and this
+expression shows these are the same as the signs of
+1 −1 z/$1 (because the remaining multhe elements of )
+tiplicative factor is always positive).
+Theorem 6. Let p be the probability that the tangency
+portfolio implied by the CAPM is impossible when the
+probability distribution on the term * underlying the
+covariance matrix ) has a distribution given by 17 . A
+lower bound for p is
+.
+1
+1 +!
+p ≥ det!)#
+F !*# 17 !)*
+( /$1 #"
+(38)
+Rn−1
+
+Brennan and Lo: Impossible Frontiers
+
+916
+
+Management Science 56(6), pp. 905–923, © 2010 INFORMS
+
+where F is equal to 1 whenever * has two elements with
+different signs, and equal to 0 otherwise.
+We now make the result more concrete by applying
+the theorem to specific choices for the distribution 17 .
+Corollary 2. If 17 has an !n − 1#-dimensional multivariate normal distribution with mean !
+( /$1 and covari1 2 for some s > 0, then the probability that
+ance matrix s )
+#$ is impossible satisfies
+p ≥ 1 − 22−n "
+
+(39)
+
+and this result is independent of the choice of s.
+( /$1 will
+Note that choices of 17 not centered at !
+generally have a lower probability of impossibility.
+However, for choices of 17 that are close to the uniform distribution, e.g., those with large variance, the
+probability of impossibility will have a lower bound
+similar to that in Corollary 2.
+5.3. A Nonimpossible Covariance Matrix
+Given the simple structure of the linear one-factor
+model (30), it should be possible to find some covari1 “close” to " in some sense that
+ance matrix "
+yields a “nonimpossible” tangency portfolio, i.e., a
+tangency portfolio that has strictly positive marketcapitalization weights #m and is consistent with !, &,
+and rf . Using the techniques developed in §5.1, we
+construct such a nonimpossible covariance matrix in
+this section and show how it is related to Black and
+Litterman’s (1992) approach to asset allocation with
+prior information.
+Suppose that a mean return vector, !, and a marketcapitalization weight vector, #m , are given, and consider a covariance matrix " that is derived either
+empirically or from prior information, but that is
+not necessarily compatible with ! and #m in the
+sense that #m 2= "−1 !, as required by the CAPM. The
+matrix most compatible with the observed " but still
+conforming to the known values of ! and #m can
+be determined in the following manner. Write " =
+AMA" , and write M in terms of w, x, and V, as in
+(32). Replace x by x( , where x( is defined by
+x(i =
+
+−8m" i+1
+$1 + !$2 − $1 #8m" 2 + · · · + !$n − $1 #8m" n
+
+(40)
+
+for 1 ≤ i ≤ n − 1. The formula in (40) inverts the relationship between #m and x from (33), so the value
+of x( is the unique value compatible with the market
+weight vector #m and the expected-return vector !.
+The change from x to x( described in the last paragraph corresponds to a change in the overall covari1 where
+ance matrix. Replace " by "
+,
+w + x( " V(x x( " V
+"
+1
+1
+1
+&
+(41)
+" ≡ AMA " M ≡
+V(x
+V
+
+1 is then compatible
+This new covariance matrix, ",
+with #m and ! in that #m is the tangency portfolio
+resulting from this mean and covariance. In addition,
+1 is the covariance matrix most compatible with the
+"
+specified values of ! and #m and the observed value
+of " in that it requires precisely the amount of alteration to " needed to make the three sets of parameters
+compatible.
+Therefore, for those who have strong conviction
+that the CAPM must hold and that ! and #m are,
+in fact, the correct expected returns and market
+weights, and " is their best estimate of the covariance
+1
+matrix, the covariance matrix they should adopt is "
+given in (41).
+
+6.
+
+Empirical Analysis
+
+To gauge the empirical relevance of our impossibility
+results, we use daily and monthly returns for stocks
+in the S&P 500 index to estimate portfolio parameters
+!!" "# and show that the realizations of impossible
+frontiers in the historical record are nontrivial. These
+results update and confirm similar empirical examples in Green (1986) and Best and Grauer (1992).
+6.1. The Data
+The monthly data consist of returns for stocks listed
+on the S&P 500 in December of 1995 for which
+monthly return data were available for the period
+from January 1980 through December 2005. The daily
+data consist of returns for stocks listed on the S&P
+500 in December of 1995 for which daily return data
+was available for the period from January 1, 1996,
+through December 31, 2005. There are a total of 271
+stocks in the monthly data set and 326 stocks in the
+daily data set.
+6.2. A 100-Stock Empirical Efficient Frontier
+For concreteness, we construct the efficient frontier
+for the first 100 assets for both daily and monthly
+returns using standard estimators for the means and
+covariance matrices. The two frontiers are plotted in
+Figure 1, and we find that both are impossible. The
+thin lines indicate the unconstrained frontiers, and the
+thick lines indicate the frontiers constrained to allow
+only 50% short selling. Figure 2 shows the amount
+of short selling for points on both of these frontiers.
+Clearly the short-sales constraints do not eliminate the
+problem of impossible frontiers and have a significant impact on the characteristics of the constrained
+optimal portfolio.
+6.3. More Impossible Frontiers
+Applying the usual sample mean and covariancematrix estimators to daily and monthly returns, we
+4 and construct efficient froncompute estimates !3
+!" "#
+
+Brennan and Lo: Impossible Frontiers
+
+917
+
+Management Science 56(6), pp. 905–923, © 2010 INFORMS
+
+Figure 1
+
+Unconstrained Efficient Frontier for 100 Stocks in the S&P
+500 Index, as Well as the Frontier Constrained to Allow No
+More Than 50% Short Selling, Based on (a) Daily Returns
+from January 1, 1996, to December 31, 2005, and
+(b) Monthly Returns from January 1980 to December 2005
+
+Figure 2
+
+(a) Daily returns
+0.25
+
+(a) Daily returns
+
+0.20
+
+0.10
+
+Unconstrained frontier
+
+350
+
+Frontier with at most 50%
+short selling
+
+300
+
+0.05
+
+Short selling (%)
+
+Daily return (%)
+
+400
+
+Unconstrained frontier
+Frontier with at most 50%
+short selling
+
+0.15
+
+0
+– 0.05
+– 0.10
+– 0.15
+– 0.20
+0.5
+
+Magnitude of Short Positions for Points on the
+Unconstrained Efficient Frontier for 100 Stocks in the
+S&P 500 Index, as Well as the Frontier Constrained to
+Allow No More Than 50% Short Selling, Based on
+(a) Daily Returns from January 1, 1996, to December 31,
+2005, and (b) Monthly Returns from January 1980 to
+December 2005
+
+250
+200
+150
+100
+
+1.0
+
+1.5
+
+2.0
+
+2.5
+
+3.0
+
+3.5
+
+4.0
+
+4.5
+
+5.0
+
+5.5
+
+50
+
+Daily risk (%)
+0
+–0.20 –0.15 –0.10 –0.05
+
+(b) Monthly returns
+4
+
+0
+
+0.05
+
+0.10
+
+0.15
+
+0.20
+
+0.25
+
+Daily return (%)
+(b) Monthly returns
+
+3
+
+2
+500
+1
+
+Short selling (%)
+
+Monthly return (%)
+
+600
+
+0
+
+–1
+
+–2
+
+2
+
+4
+
+6
+
+8
+
+10
+
+12
+
+14
+
+16
+
+18
+
+20
+
+22
+
+Monthly risk (%)
+
+400
+
+300
+
+200
+
+100
+
+0
+–2
+
+tiers for each of 2 through 326 assets for daily returns,
+and 2 through 271 assets for monthly returns. Figure 3
+shows the fraction of assets with respect to which
+each frontier is impossible. Figure 4 shows the size
+of the short positions in the portfolios #g and #$ for
+each of these frontiers. These results show that negative holdings are the rule rather than the exception
+for empirical efficient frontiers, and nonnegativity
+constraints are likely to have a major impact on the
+characteristics of mean-variance-optimized portfolios.
+6.4. Estimation Error
+One possible critique of our empirical analysis is that
+estimation error is likely to yield sample means and
+covariances that are inconsistent with the CAPM, so
+it is not surprising that we find impossible fron-
+
+–1
+
+0
+
+1
+
+2
+
+3
+
+4
+
+Monthly return (%)
+
+tiers in the data. But this observation only underscores the ubiquity of impossible frontiers in practice. Because the population means and covariance
+matrix must always be estimated in financial applications, estimation error is an unavoidable aspect of
+practical portfolio management. Although a number
+of authors have explored the impact of estimation
+error on portfolio optimization (see, e.g., Brown 1976;
+Bawa et al. 1979; Frost and Savarino 1986; Jorion 1986;
+Jagannathan and Ma 2003; Tu and Zhou 2004, 2007,
+2008; Wang 2005; Garlappi et al. 2007; Kan and Zhou
+2007; DeMiguel et al. 2009), and alternatives such
+as Bayesian inference (Brown 1976), robust portfolio optimization (Fabozzi et al. 2007), and resampling
+
+Brennan and Lo: Impossible Frontiers
+
+918
+
+Management Science 56(6), pp. 905–923, © 2010 INFORMS
+
+Figure 3
+
+The Fraction of Assets with Respect to Which the Empirical
+Frontiers Are Impossible, as a Function of the Number of
+Assets Underlying the Frontiers, Based on a Subset of S&P
+500 Stocks Using (a) Daily Returns from January 1, 1996, to
+December 31, 2005, with the Number of Stocks, n, Ranging
+from 2 to 326; and (b) Monthly Returns from January 1980
+to December 2005, with the Number of Stocks, n, Ranging
+from 2 to 271
+
+Figure 4
+
+(a) Daily returns
+
+(a) Daily returns
+
+450
+
+25
+
+20
+
+15
+
+10
+
+5
+
+!! portfolio
+
+350
+300
+250
+200
+150
+100
+50
+0
+
+0
+
+!g portfolio
+
+400
+
+Amount of short selling (%)
+
+Fraction of assets for which
+frontier is impossible (%)
+
+Magnitude of Short Positions in the Portfolios !g and !& for
+the Empirical Frontiers, Based on a Subset of S&P 500
+Stocks Using (a) Daily Returns from January 1, 1996, to
+December 31, 2005, with the Number of Stocks, n, Ranging
+from 2 to 326; and (b) Monthly Returns from January 1980
+to December 2005, with the Number of Stocks, n, Ranging
+from 2 to 271
+
+0
+
+50
+
+100
+
+150
+
+200
+
+250
+
+300
+
+0
+
+50
+
+100
+
+150
+
+200
+
+250
+
+300
+
+350
+
+Number of assets
+
+350
+
+Number of assets
+
+(b) Monthly returns
+1,200
+
+(b) Monthly returns
+40
+
+Amount of short selling (%)
+
+Fraction of assets for which
+frontier is impossible (%)
+
+35
+30
+25
+20
+15
+10
+
+1,000
+800
+600
+400
+200
+
+5
+0
+0
+
+0
+
+50
+
+100
+
+150
+
+200
+
+250
+
+0
+
+50
+
+100
+
+150
+
+200
+
+250
+
+300
+
+Number of assets
+
+300
+
+Number of assets
+
+(Michaud 1998) have been developed in response,
+none of these methods addresses the impossibility of
+the population mean-variance-efficient frontier.
+In particular, Theorems 1 and 2 show that impossible frontiers are almost certain to occur, even in the
+absence of estimation error. To the extent that estimation error can be viewed as random perturbations of
+population parameters (as opposed to perturbations
+that yield parameters closer to those satisfying a
+CAPM/APT relation), it is even more likely that estimated means and covariances will yield impossible
+frontiers. In other words, if a frontier is impossible for
+a set of population parameters, adding random noise
+to those parameters is unlikely to yield frontiers that
+are consistent with the CAPM.
+
+7.
+
+Conclusion
+
+In this paper, we have shown that mean-varianceefficient frontiers almost always contain short positions, implying a fundamental inconsistency between
+efficiency and economic equilibrium as described by
+the CAPM. This result is distinct from earlier concerns in the literature regarding the mean-variance
+efficiency of the market portfolio. Those concerns
+involved the observability of the total market portfolio, the existence of nontraded assets such as
+human capital, estimation errors in the sample means
+and covariance matrix, nonstationarities, asymmetric
+information, and other capital-market imperfections.
+Even in a frictionless world where all parameters
+are fixed and known, and where all of the other
+perfect-markets assumptions of the CAPM hold,
+
+Brennan and Lo: Impossible Frontiers
+
+919
+
+Management Science 56(6), pp. 905–923, © 2010 INFORMS
+
+mean-variance-efficient frontiers are almost always
+impossible.
+This surprisingly general result provides a potential
+explanation for the near universal disdain with which
+long-only portfolio managers regard standard meanvariance optimization techniques. These investment
+professionals—who comprise the majority of end
+users of commercial portfolio construction software
+such as the BARRA Optimizer and the Northfield
+Portfolio Optimizer—have railed against mindless
+optimization for years, arguing that portfolio weights
+obtained in this manner are ill behaved and must
+be constrained or otherwise postprocessed. However,
+the typical rationale for these complaints is that the
+weights of frontier portfolios are too unstable and
+too sensitive to estimation error to be of practical
+value. We have identified a distinctly different rationale, which is the ubiquity of short positions in frontier portfolios, even in the absence of estimation error.
+An impossible frontier is, in fact, literally impossible
+for the long-only portfolio manager. The surging popularity of 130/30 and more general long/short strategies among such managers and their investors may
+well be a practical manifestation and an unintended
+consequence of the impossibility of mean-varianceoptimal portfolios.
+The virtual certainty of impossible frontiers also has
+implications for the interpretation of economic equilibrium. The converse of our impossibility theorem is
+that the set of parameters, !!" "#, that are “possible,”
+i.e., that are consistent with the mean-variance efficiency of the market portfolio, is a vanishingly small
+set as the number of assets grows without bound.
+In particular, in a CAPM equilibrium, covariances
+are also endogenously determined via supply and
+demand, despite the fact that most asset-pricing models focus exclusively on the properties of expected
+returns in equilibrium. Is it any wonder that the set
+of n means and n!n + 1#/2 covariances that is consistent with capital-market equilibrium is apparently
+quite sparse?
+To the disciples of general equilibrium theory, this
+may be heretical, but from a broader and more practical perspective, it should not be too surprising that
+the likelihood of simultaneous equality of supply and
+demand across a large number of markets is small,
+and increasingly less likely as the number of assets
+grows. With the techniques developed in this paper,
+we hope to be able to deduce other generic properties
+of financial market equilibria as well as their practical
+implications.
+Acknowledgments
+
+The views and opinions expressed in this paper are those
+of the authors only and do not necessarily represent the
+views and opinions of AlphaSimplex Group, MIT, Northwestern University, or any of their affiliates and employees.
+
+The authors make no representations or warranty, either
+expressed or implied, as to the accuracy or completeness
+of the information contained in this paper, nor are they
+recommending that this paper serve as the basis for any
+investment decision—this paper is for information purposes
+only. Research support from AlphaSimplex Group, the MIT
+Laboratory for Financial Engineering, and the Northwestern University School of Law Faculty Research Program is
+gratefully acknowledged. The authors thank Henry Cohn,
+Jayna Cummings, Sanjiv Das, Arnout Eikeboom, Leonid
+Kogan, Tri-Dung Nguyen, Tjeerd van Cappelle, the editor
+(Wei Xiong), the associate editor (Haitao Li), two referees,
+and participants of the JOIM (Journal of Investment Management) Fall 2008 Conference and the MIT Finance Lunch for
+helpful comments and discussions.
+
+Appendix
+In this appendix, we provide proofs for the main results of
+this paper.
+Proof of Proposition 1. When there are only n = 2
+assets, we may write the set of points on the frontier
+simply as
+$
+6
+!
+5
+$o − $1 $2 − $o "
+B
+for $o ≥
+&
+! = #% # =
+$2 − $1 $2 − $1
+C
+Thus, for all expected returns $o with $1 < $o < $2 , points
+on the frontier have positive weight in both components,
+but for all values of $o outside this range, every point on
+the frontier has exactly one negative component. If the minimum value of $o , namely, $o = B/C, is less than $2 , then
+at least some point on the frontier has all positive weights,
+but if this value of $o is greater than $2 , then all points on
+the frontier have at least one negative weight.
+The condition that B/C < $2 is the same as the condition
+that
+$1 !e"1 "−1 $# + $2 !e"2 "−1 $#
+< $2 &
+!e"1 "−1 $# + !e"2 "−1 $#
+
+The denominator on the left-hand side is nonnegative,
+according to the Cauchy-Schwarz inequality, so we may
+cross-multiply and collect terms to see that the inequality
+holds exactly when e"1 "−1 $ > 0. This, in turn, is the same as
+the inequality ( < '2 /'1 , so we see that a frontier will be
+impossible just when '2 /'1 < ( ≤ 1 and $1 < $2 , which is
+the assertion of Proposition 1. !
+Proof of Lemma 1. We note that an (n × n) correlation
+matrix is positive definite if its elements are the cosines of
+angles between a pairs of vectors chosen from a set of n
+unit vectors that span an n-dimensional space. Thus, for a
+3 × 3 matrix
+
+
+1 a c
+
+
+
+M=
+a 1 b "
+c b 1
+
+positive definiteness holds if there are three vectors, u1 , u2 ,
+and u3 , such that a is the cosine of the angle between the
+first two vectors, b is the cosine of the angle between the
+last two vectors, and c is the cosine of the angle between
+the first and the last vector. Any values for a and b may be
+specified provided that −1 < a, b < 1, with strict inequality
+necessary to avoid linear dependence among the vectors. If
+
+Brennan and Lo: Impossible Frontiers
+
+920
+
+Management Science 56(6), pp. 905–923, © 2010 INFORMS
+
+such values of a and b are specified, then the value of c
+must follow the law of cosines so that
+√
+√
+c = ab + c̃ 1 − a2 1 − b 2
+(42)
+for some −1 < c̃ < 1. Strict inequality is again necessary
+to avoid linear dependence among the vectors. The definition of " in (6) specifies that a = d, b = d, and c = d 4 .
+These values meet the requirements for positive definiteness, because c can be expressed in the form given in (42)
+with c̃ = d 2 . Thus " is positive definite and the lemma
+follows. !
+Proof of Proposition 2. The idea of the proof is to compute #$ , #g , and #P directly. We obtain expressions for
+each of these portfolios in terms of ), and we then analyze
+the results to show that, for small values of ), all portfolios
+on the efficient frontier are impossible. We also analyze the
+results to obtain a lower bound for the minimum amount of
+short selling in any portfolio throughout the entire impossible frontier.
+We turn first to the explicit computation of the three portfolios. To begin, we note that the inverse covariance matrix
+corresponding to the parameters in (6) is
+
+
+1/d 2
+−!1+d 2 #
+d2
+
+' 4 !1−d 2 # 
+ −!1+d 2 # !1+d 2 #!1+d 4 # −d 2 !1+d 2 #  &
+"−1 = 2
+
+
+det!"#
+d2
+−d 2 !1+d 2 #
+d2
+For ! as defined in (6), we can multiply the above expression for "−1 by ! and use the relationship d = 1−) to obtain
+
+
+) + )2 + )3 + )4 + O!)5 #
+
+$ ' 4 !1 − d 4 # 
+ −2) + 6)2 − 4)3 + )4  &
+"−1 ! = 2 2
+
+
+det!"#
+) − )2
+
+Dividing the bracketed vector in this expression by the sum
+of its elements, we obtain
+
+
+12 + 18) + 17)2 + O!)3 #
+−1
+
+1 
+" !
+ −24 + 60) − 10)2 + O!)3 #  "
+=
+#$ = " −1
+
+$" !
+72) 
+12 − 6) − 7)2 + O!)3 #&
+
+which is the computation of #$ in terms of ) we desire. The
+computation of #g proceeds similarly, with a direct computation of "−1 $ and a rescaling by the sum of vector components to obtain
+
+
+12 + 30) + 35)2 + O!)3 #
+−1
+
+1 
+" $
+ −24 + 60) − 22)2 + O!)3 #  &
+#g = " −1 =
+
+$" $
+72) 
+12 − 18) − 13)2 + O!)3 #
+Finally, we compute #P using the foregoing results to obtain
+
+
+−2 − 3) + O!)2 #
+
+B 
+ 2) + O!)2 #  "
+#P = B!#$ − #g # =
+
+
+12
+2 + ) + O!)2 #
+
+where
+
+B = $" "−1 ! =
+
+$2 '24 !1 − d 4 #
+!6)2 − 3)3 + 2)4 # > 0&
+det!"#
+
+The final inequality in the above expression holds because
+$2 > 0, det!"# > 0, and 0 < ) < 1.
+We now use the foregoing computations to show that the
+efficient frontier is impossible for sufficiently small values
+of ). Using (5), we see that every portfolio on the efficient
+frontier is of the form
+# = *#
+( P + #g "
+where * ≥ 0 and #
+( P = !12/B##P . Inserting the above expressions for #P and #g , we rewrite this expression for # as
+
+
+
+# = *
+
+
+−2 − 3) + O!)2 #
+
+
+
+2) + O!)2 #
+
+2 + ) + O!)2 #
+
+
+
+
+
+
+1/!6)# + 5/12 + !35/72#) + O!)2 #
+
+
+
+
+
+2 
++
+ −1/!3)# + 5/6 − !11/36#) + O!) #  &
+1/!6)# − 1/4 − !13/72#) + O!)2 #
+
+By solving for the value of * that makes the second coordinate zero, we see that the weight of the second asset is negative for portfolios corresponding to the range 0 ≤ * ≤ *2 ,
+where *2 = 1/!6)2 # + O!1/)#. Similarly, by solving for the
+value of * that makes the first coordinate zero, we see that
+the weight of the first asset is negative for portfolios corresponding to the range * ≥ *1 , where *1 = 1/!12)# + O!1#.
+For sufficiently small values of ), we have *2 5 *1 , and so
+the efficient frontier is impossible. Specifically, the frontier
+has negative weights in the second asset if * is between 0
+and *2 , and negative weights in the first asset if * is greater
+than *1 . Because *1 is less than *2 , there is always at least
+one asset with a negative weight, and in the range between
+*1 and *2 , both the first and second assets have negative
+weight.
+Finally, we note that the portfolio with the minimum
+amount of short selling on the entire frontier occurs at the
+point *1 . To see this, we observe that for * values less than
+*1 , only the second asset has a negative weight, and this
+weight decreases as * increases. Also, for * values greater
+than *1 , the first asset has a negative weight, and it increases
+with * more quickly than the negative weight of the second
+asset decreases. Thus, the minimum amount of short selling
+occurs at * = *1 , and for small values of ), this amount of
+short selling is 1/!3)# + O!1#. !
+Proof of Lemma 2. The first inequality in (18) states
+that the ith component of #g is negative, and the second
+inequality states that the ith component of #P = B#$ − B#g
+is also negative. Together, these inequalities imply that
+the ith component of each portfolio on the entire efficient
+frontier has a negative weight, because C and D are always
+positive, by the Cauchy-Schwartz inequality, and because
+frontier portfolios have the form described in (5). This
+demonstrates the sufficiency of the condition for impossibility in the ith asset. The necessity also follows readily
+because a negative ith component of each portfolio is only
+possible if there is a negative ith component in the minimum risk portfolio, #g , as well as in the high-risk portfolios
+that tend toward a positive multiple of #$ − #g .
+
+Brennan and Lo: Impossible Frontiers
+
+921
+
+Management Science 56(6), pp. 905–923, © 2010 INFORMS
+
+To deduce the equivalence between the conditions in (18)
+and (19), we note that
+"−1 = !A−1 #" M−1 A−1 &
+As in Definition 2, we can express M in terms of coordinates
+as !X" W" V#, and we have
+,
+- , −1
+-,
+I2
+W
+I2 −X"
+0
+0
+−1
+M =
+−X In−2
+0
+V−1
+0 In−2
+,
+−1
+−1 "
+W
+−W X
+=
+&
+−1
+−1
+−XW
+V + XW−1 X"
+From the definition of A = A!c1 " & & & " cn # in (17), we see that
+A−1 $ = e1 /c1 "
+
+A−1 ! = e2 /c2 "
+
+A−1 ej = ej /cj "
+
+We write W = -wij / so that
+W
+
+−1
+
+1
+=
+det!W#
+
+,
+
+and
+
+for 3 ≤ j ≤ n&
+
+w22
+−w12
+
+−w12
+w11
+
+-
+
+&
+
+After some algebraic rearrangements, we see that the conditions in (18) are equivalent to
+x1" !i−2# w22 − x2" !i−2# w12 > 0
+
+and x!i−2#" 2 > 0"
+
+(43)
+
+where we have used the facts that det!W# > 0 and w22 > 0,
+because W is positive definite.
+With the notation from Definition 2, we write w22 =
+v, w12 = yv, x1" i−2 = ri−2 cos +i−2 , and x2" i−2 = ri−2 sin +i−2 .
+Equation (43) can be rewritten in terms of these new
+coordinates as
+cos +i−2 − y sin +i−2 > 0
+
+and
+
+sin +i−2 > 0
+
+because both ri−2 > 0 and v > 0, and this is the condition
+in (19). !
+Proof of Theorem 1. From Equation (19) of Lemma 2
+we see that the probability, pi , that a frontier is impossible with respect to the ith coordinate, for i > 2, is just
+the probability that the conditions of (19) are fulfilled
+when +i−2 is chosen from the uniform distribution on S 1 =
+-0" 20/. The conditions are satisfied exactly when + ∈ !0" 0#
+and y < cot +i−2 , and this corresponds to a probability of
+impossibility
+1
+cot−1 y"
+pi =
+20
+where cot−1 denotes the branch of the inverse cotangent
+with values between 0 and 0.
+Equation (19) of Lemma 2 also shows that for a fixed
+value of y, impossibility in the ith coordinate is independent
+of impossibility in the jth coordinate, for i" j > 2. Thus, the
+probability of impossibility in at least one of the coordinates
+i > 2 is bounded below as
+#n−2
+"
+1
+cot−1 y
+"
+p≥1− 1−
+20
+and this implies the first inequality of the theorem. The
+second inequality follows directly, because the inequality
+cot−1 y ≥ 1/!1 + max!0" y## holds for all y. !
+
+Proof of Theorem 2. From Corollary 1, we see that the
+probability in the theorem is bounded below as
+#n−2
+. "
+1
+PI ≥ 1 −
+1y !y#
+1−
+20!1 + max!0" y##
+R
+#
+. 0"
+1 n−2
+1y !y#
+1−
+≥ 1−
+20
+−/
+#n−2
+. /"
+1
+2
+1−
+e−y dy&
+−c
+20!1 + y#
+0
+
+The first integral in the last line is bounded above by
+!1 − 1/!20##n−2 . The second integral is bounded above by
+the sum
+#
+#
+. 2"
+. /"
+1 n−2 −y2
+1 n−2 −y2
+c
+1−
+e dy + c
+1−
+e dy&
+60
+30y
+0
+2
+The first integral in this sum is bounded above by
+c!1 − 1/!60##n−2 , and the second integral is bounded above
+2/3
+by 2ce−!!n−2#/!30## . This last bound follows from the fact
+2/3
+that !1 − 1/!30y##n−2 is bounded above by e−!!n−2#/!30## for
+1/3
+0 ≤ y ≤ !!n − 2#/!30## , as well as the fact that
+. /
+2
+2/3
+e−y dy < e−!!n−2#/!30## &
+!!n−2#/!30##1/3
+
+Combining these results, we see that the probability is
+bounded below by
+" #n−2
+" #n−2
+" "
+# #
+6
+19
+n − 2 2/3
+−c
+− 2c exp −
+"
+PI ≥ 1 −
+7
+20
+30
+
+where we have made use of the fact that 6/7 > 1 − 1/!20#
+and the fact that 19/20 > 1 − 1/!60#. Finally, we note that
+!19/20#n−2 ≤ 2 exp!−!!n − 2#/!30##2/3 #&
+This inequality can be proven by noting that it holds if
+and only if the logarithm of the right-hand side minus
+the logarithm of the left-hand side is positive for n ≥ 2.
+Computation of the value of this difference shows that it is
+positive for n ≤ 27, and computation of the derivative of the
+difference, taken with respect to n, shows that the derivative
+is positive for n ≥ 27. As a result, the difference is positive
+for all n, and the inequality holds. Thus, we can bound PI
+below as
+# #
+" #n−2
+" "
+6
+n − 2 2/3
+− 4c exp −
+& !
+PI ≥ 1 −
+7
+30
+Proof of Theorem 3. The expected number of assets
+with respect to which an efficient frontier is impossible
+satisfies
+#
+. "7
+n
+1
+En ≥
+1y !y#&
+R i=3 20!1 + max!0" y##
+
+This follows from the proof of Theorem 1, which shows
+that the ith summand in the integrand is a lower bound
+for the probability that a covariance matrix gives rise to an
+impossible frontier for a fixed value of y. We thus see that
+#
+. "
+1
+1y !y#"
+En ≥ !n − 2#
+R 20!1 + max!0" y##
+
+Brennan and Lo: Impossible Frontiers
+
+922
+
+Management Science 56(6), pp. 905–923, © 2010 INFORMS
+
+and this last integral is the constant c " from the statement
+of the theorem. Also, in the case in which 1y !y# is a normal
+distribution with unit variance, we see from a numerical
+computation that
+n−2
+"
+En ≥
+8
+and this is the final claim of the theorem. !
+Proof of Theorem 4. If a frontier meets the necessary
+and sufficient conditions of Lemma 2 for the ith coordinate
+where 3 ≤ i ≤ n, then it is an impossible frontier with respect
+to the ith asset. In this case, the ith components of both #g
+and #P are negative, so the total amount of short selling in
+the ith asset throughout the frontier is bounded below by
+the amount of short selling in the ith asset for the minimumvariance portfolio. Thus, we see that
+Si !"# ≥ −e"i #g = −
+
+e"i "−1 $
+= −!−ri−2 cos +i−2 + yri−2 sin +i−2 #"
+$" "−1 $
+
+where we have used the change of coordinates " = AMA"
+and the coordinates for M from Definition 2 to establish the
+final equality. We thus see that the expected amount of short
+selling with respect to the ith asset satisfies
+. / ". 0 . cot +i−2
+!ri−2 cos +i−2
+E-Si / ≥
+0
+
+0
+
+−/
+
+d+
+− yri−2 sin +i−2 # 1y i−2
+20
+
+#
+
+1ri−2 "
+
+(44)
+
+where we have used the result from Lemma 2 in which a
+frontier is impossible with respect to the ith asset exactly
+when +i−2 ∈ !0" 0# and y < cot +i−2 . We have also used the
+notation 1y and 1ri−2 from Definition 3.
+Because the integrand in (44) is positive throughout the
+region of integration, we can find a smaller lower bound by
+restricting the size of the region of integration. We calculate
+". /
+#
+#". 0/2 . 0
+d+
+ri−2 1ri−2
+!cos+i−2 −ysin+i−2 #1y i−2
+E-Si / ≥
+20
+0
+0
+−/
+". /
+#". 0
+#
+1
+r 1
+!1−y# 1y &
+=
+20 0 i−2 ri−2
+−/
+This is the lower bound in the theorem for E-Si /. The lower
+bound for E-S/ follows immediately if the 1ri−2 are identical
+for 3 ≤ i ≤ n. !
+Proof of Theorem 5. Let !0 be the frontier constrained
+to allow no short selling that corresponds to ! and !b . Let
+'0 be the risk of the minimum risk portfolio on !0 , and let
+$0 be the expected return of the maximum-expected-return
+portfolio on !0 . Each portfolio on !b with a lower risk than
+'0 must involve short selling, because '0 is the minimum
+possible risk without short selling. Similarly, each portfolio
+on !b with a higher expected return than $0 must involve
+short selling, because $0 is the maximum possible expected
+return without short selling. Thus, we need only show that
+each portfolio on !b with a risk greater than or equal to
+'0 and an expected return less than or equal to $0 must
+involve short selling.
+Let #b be a portfolio on !b with risk and expected return
+'b and $b , respectively, such that 'b ≥ '0 and $b ≤ $0 . There
+are weight vectors #0 and #U on !0 and ! , respectively,
+with the same expected return as #b . For 0 ≤ 9 ≤ 1, write
+#9 = !1 − 9##0 + 9#U
+
+so that each #9 also has the same expected return $b . Let '9
+denote the risk of #9 . Note that '9 is a decreasing function
+of 9, for 0 ≤ 9 ≤ 1, because '92 is a quadratic function of 9,
+and because 9 = 1 corresponds to the minimum risk portfolio for the level of expected return $b . We assume here
+that ! is impossible so that #U involves short selling and
+is therefore distinct from #0 . We thus see that each #9 with
+9 > 0 has lower risk than #0 but the same level of return
+$b . Also, the amount of short selling in #9 is positive for all
+9 > 0 but goes to zero as 9 → 0. As a result, there is some
+9∗ > 0 such that the amount of short selling on #9∗ is no
+more than b. The existence of this #9∗ implies that 'b must
+be no greater than #9∗ , and hence strictly less than the risk
+of #0 . Because the risk of #b must be strictly less than the
+risk of #0 , it follows that #b must involve short selling, as
+desired. !
+Proof of Theorem 6. From the condition for impossibility in Proposition 3 and from the expression for x in (37),
+we see that the probability is bounded below by
+.
+F !x#17 !*#
+p≥
+Rn−1
+""
+#
+#
+.
+611 /$1
+1 −1 z 17 !*#"
+=
+F
+)
+1 −1/2 z62
+Rn−1
+1 + 611 6)
+where z = * − !
+( /$1 . Because F depends only on the signs
+of the elements of its argument, we have
+.
+1 −1 z# 17 !*#"
+F !)
+p≥
+Rn−1
+
+and after a change of variables, we see that
+.
+1 +!
+1
+F !*# 17 !)*
+( /$1 #
+p ≥ det!)#
+Rn−1
+
+as desired. !
+Proof of Corollary 2. Substitution of the specified
+choice of 17 into the result of Theorem 6 shows that
+"
+#
+.
+1
+1 "
+p≥
+F
+!*#
+exp
+−
+*
+*
+d*&
+!20s#!n−1#/2 Rn−1
+2s
+
+This integral is simply an expression for the fraction of the
+unit sphere in Rn−1 that does not have either all negative
+or all positive coordinates, and this fraction is 1 − 22−n , as
+desired. !
+
+References
+Anderson, T. 1984. An Introduction to Multivariate Statistical Analysis,
+2nd ed. John Wiley & Sons, New York.
+Bawa, V., S. Brown, R. Klein. 1979. Estimation Risk and Optimal Portfolio Choice. North-Holland, Amsterdam.
+Berger, J., 1985, Statistical Decision Theory and Bayesian Analysis,
+2nd ed. Springer-Verlag, New York.
+Best, M. J., R. R. Grauer. 1985. Capital asset pricing compatible with
+observed market value weights. J. Finance 40 85–103.
+Best, M. J., R. R. Grauer. 1991a. On the sensitivity of meanvariance-efficient portfolios to changes in asset means: Some
+analytical and computational results. Rev. Financial Stud. 4
+315–342.
+Best, M. J., R. R. Grauer. 1991b. Sensitivity analysis for meanvariance portfolio problems. Management Sci. 37 980–989.
+
+Brennan and Lo: Impossible Frontiers
+Management Science 56(6), pp. 905–923, © 2010 INFORMS
+
+Best, M. J., R. R. Grauer. 1992. Positively weighted minimumvariance portfolios and the structure of asset expected returns.
+J. Financial Quant. Anal. 27 513–537.
+Black, F., R. Litterman. 1992. Global portfolio optimization. Financial
+Analysts J. 47 28–43.
+Box, G., G. Tiao. 1973. Bayesian Inference in Statistical Analysis.
+Addison-Wesley, Reading, MA.
+Brown, S. 1976. Optimal portfolio choice under uncertainty: A
+Bayesian approach. Ph.D. dissertation, University of Chicago,
+Chicago.
+DeMiguel, V., L. Garlappi, R. Uppal. 2009. Optimal versus naive
+diversification: How inefficient is the 1/N portfolio strategy?
+Rev. Financial Stud. 22 1915–1953.
+Fabozzi, F., P. Kolm, D. Pachamanova, S. Focardi. 2007. Robust
+Portfolio Optimization and Management. Wiley Finance, New
+York.
+Frost, P., J. Savarino. 1986. An empirical bayes approach to efficient
+portfolio selection. J. Financial Quant Anal. 21 293–305.
+Garlappi, L., R. Uppal, T. Wang. 2007. Portfolio selection with
+parameter and model uncertainty: A multi-prior approach. Rev.
+Financial Stud. 20 41–81.
+Green, R., B. Hollifield. 1992. When will mean-variance efficient
+portfolios be well diversified? J. Finance 47 1785–1809.
+Green, R. C. 1986. Positively weighted portfolios on the minimumvariance frontier. J. Finance 41 1051–1068.
+Jagannathan, R., T. Ma. 2003. Risk reduction in large portfolios:
+Why imposing the wrong constraints helps. J. Finance 58
+1651–1683.
+Jeffreys, H. 1961. Theory of Probability, 3rd ed. Oxford University
+Press, Oxford, UK.
+Jorgenson, J., S. Lang. 2005. Pos n !R# and Eisenstein Series. SpringerVerlag, Berlin.
+Jorion, P. 1986. Bayes-Stein estimation for portfolio analysis.
+J. Financial Quant. Anal. 21 279–292.
+Kan, R., G. Zhou. 2007. Optimal portfolio choice with parameter
+uncertainty. J. Financial Quant. Anal. 42 621–656.
+
+923
+Lintner, J. 1965. The valuation of risk assets and the selection of
+risky investments in stock portfolios and capital budgets. Rev.
+Econom. Statist. 47 13–37.
+Markowitz, H. 1952. Portfolio selection. J. Finance 7 77–91.
+Markowitz, H. 1959. Portfolio Selection. Cowles Foundation, Yale
+University, New Haven, CT.
+Markowitz, H. 2005. Market efficiency: A theoretical distinction and
+so what? Financial Analysts J. 60 17–30.
+Merton, R. 1972. An analytic derivation of the efficient portfolio
+frontier. J. Financial Quant. Anal. 7 1851–1872.
+Michaud, R. 1998. Efficient Asset Management: A Practical Guide to
+Stock Portfolio Optimization and Asset Allocation. Harvard Business School Press, Boston.
+Roll, R. 1977. Critique of the asset pricing theory’s tests: Part I: On
+past and potential testability of the theory. J. Financial Econom.
+4 129–176.
+Roll, R., S. A. Ross. 1977. Comments on qualitative results for
+investment proportions. J. Financial Econom. 5 265–268.
+Ross, S. 1976. The arbitrage theory of capital asset pricing.
+J. Econom. Theory 13 341–360.
+Rudd, A. 1977. Note on qualitative results for investment proportions. J. Financial Econom. 5 259–263.
+Sharpe, W. 1964. Capital asset prices: A theory of market equilibrium under conditions of risk. J. Finance 19 425–442.
+Tobin, J. 1958. Liquidity preference as behavior towards risk. Rev.
+Econom. Stud. 67 65–86.
+Tu, J., G. Zhou. 2004. Data-generating process uncertainty: What
+difference does it make in portfolio decisions? J. Financial
+Econom. 72 385–421.
+Tu, J., G. Zhou. 2007. Incorporating economic objectives into
+Bayesian priors: Portfolio choice under parameter uncertainty.
+Working paper, Olin School of Business, Washington University, St. Louis.
+Tu, J., G. Zhou. 2008. Being naive about naive diversification: Can
+investment theory beat the 1/N strategy? Working paper, Olin
+School of Business, Washington University, St. Louis.
+Wang, Z. 2005. A shrinkage approach to model uncertainty and
+asset allocation. Rev. Financial Stud. 18 673–705.
+
+
